@@ -14,3 +14,7 @@
 
 # Ignore application configuration
 /config/application.yml
+
+# Others files
+.DS_Store
+*.log
