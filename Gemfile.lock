@@ -8,6 +8,12 @@ GIT
       less-rails (>= 2.5.0)
       railties (>= 3.1)
 
+GIT
+  remote: git@github.com:DatabaseCleaner/database_cleaner.git
+  revision: d2a7ee40bfe4f64d755dd46007e862d334f05e2d
+  specs:
+    database_cleaner (1.4.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -181,6 +187,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  database_cleaner!
   figaro
   jbuilder (~> 2.0)
   jquery-rails
