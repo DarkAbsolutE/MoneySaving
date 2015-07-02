@@ -48,4 +48,7 @@ group :development, :test do
 
   # Use rspec
   gem 'rspec-rails', '~>3.0'
+
+  # Use capybara
+  gem 'capybara'
 end
