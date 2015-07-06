@@ -17,3 +17,4 @@
 
 # Others files
 .DS_Store
+*.log
