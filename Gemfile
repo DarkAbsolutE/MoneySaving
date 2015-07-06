@@ -6,6 +6,8 @@ gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
 gem 'database_cleaner', git: 'git@github.com:DatabaseCleaner/database_cleaner.git'
 gem 'pg'
+gem 'ffaker'
+gem 'simple_form'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
