@@ -1,0 +1,11 @@
+mplementacion de una nueva funcionalidad, un feature
+feature/implement-login
+
+#Reparacion de algun bug
+bugfix/broken-login
+
+#Reparacion de algun bug, pero este es subido directamente a production sin pasar por staging, osea, reparaciones de urgentes
+hotfix/broken-login
+
+#Configuraciones
+chore/setup-rails-project
