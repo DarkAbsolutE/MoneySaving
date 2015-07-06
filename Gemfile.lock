@@ -199,11 +199,8 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
-<<<<<<< HEAD
   factory_girl_rails
-=======
   database_cleaner!
->>>>>>> b833a0f4e4f234eb6d475ac106fe5a4f9c1dde8d
   figaro
   jbuilder (~> 2.0)
   jquery-rails

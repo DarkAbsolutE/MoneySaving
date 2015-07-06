@@ -4,11 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
-<<<<<<< HEAD
 gem 'factory_girl_rails'
-=======
 gem 'database_cleaner', git: 'git@github.com:DatabaseCleaner/database_cleaner.git'
->>>>>>> b833a0f4e4f234eb6d475ac106fe5a4f9c1dde8d
 gem 'pg'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 # Use SCSS for stylesheets
