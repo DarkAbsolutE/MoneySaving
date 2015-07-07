@@ -1,10 +1,11 @@
 class CreateEmployees < ActiveRecord::Migration
   def change
     create_table :employees do |t|
-	t.string :name
-	t.string :paypal_email
+	t.string :names
+	t.string :lastname
+	t.string :email
 	t.boolean :is_admin, default: false
-	t.boolean :active, default: false
+	t.boolean :status, default: false
     end
   end
 end
