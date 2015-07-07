@@ -1,23 +1,21 @@
 module BambooHR
   class Sync
-    def self.users
-      users = client.employee_list
-      users['employees'].each do |data|
-        create_user(data)
+    def self.employees
+      employees = client.employee_list
+      employees['employees'].each do |data|
+        create_employee(data)
       end
     end
 
-    def self.create_user(data)
+    def self.create_employee(data)
       user_data = {
         name: data['firstName'],
         lastname: data['lastName'],
-        position: data['jobTitle']
+	status: true
         }
-
-
       if importable?(data)
-        user = User.create_with(user_data).find_or_initialize_by(email: data['workEmail'])
-        print '.' if  user.save(validate: false)
+        employee = Employee.create_with(user_data).find_or_initialize_by(email: data['workEmail'])
+        print '.' if  employee.save(validate: false)
       end
     end
 

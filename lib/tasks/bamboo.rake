@@ -1,10 +1,10 @@
 require 'bamboohr/sync'
 
 namespace :bamboo do
-  desc "Synchronize users with bamboo"
+  desc "Synchronize employees with bamboo"
   task sync_users: :environment do
-    puts "Importing Bamboo users"
-    BambooHR::Sync.users
+    puts "Importing Bamboo employees"
+    BambooHR::Sync.employees
     puts "\nBamboo users sync complete!\n"
   end
 end
