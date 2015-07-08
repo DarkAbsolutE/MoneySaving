@@ -4,6 +4,7 @@ class CreateEmployees < ActiveRecord::Migration
 	t.string :names
 	t.string :lastname
 	t.string :email
+	t.string :paypal_email
 	t.boolean :is_admin, default: false
 	t.boolean :status, default: false
     end
