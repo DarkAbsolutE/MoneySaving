@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/crowdint/bamboohr.git
+  revision: 69b788ac5bb24541871daca91379d511ea5f4830
+  specs:
+    bamboohr (0.0.1)
+      httparty (~> 0.13.0)
+
+GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 935f53bb55ef736260fa2ef04e29da2fc3fb2b3f
   specs:
@@ -53,8 +60,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
-    bamboohr (0.0.1)
-      httparty (~> 0.13.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -211,7 +216,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bamboohr
+  bamboohr!
   byebug
   capybara
   coffee-rails (~> 4.1.0)

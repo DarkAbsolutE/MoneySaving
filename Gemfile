@@ -39,7 +39,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 # Use bamboohr
-gem 'bamboohr'
+gem 'bamboohr', github: 'crowdint/bamboohr'
 # Use pry for debugging
 gem 'pry'
 
