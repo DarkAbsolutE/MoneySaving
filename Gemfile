@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
+gem 'factory_girl_rails'
 gem 'database_cleaner', git: 'git@github.com:DatabaseCleaner/database_cleaner.git'
 gem 'pg'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
@@ -51,4 +52,7 @@ group :development, :test do
 
   # Use rspec
   gem 'rspec-rails', '~>3.0'
+
+  # Use capybara
+  gem 'capybara'
 end
