@@ -17,10 +17,12 @@ ActiveRecord::Schema.define(version: 20150703010934) do
   enable_extension "plpgsql"
 
   create_table "employees", force: :cascade do |t|
-    t.string  "name"
+    t.string  "names"
+    t.string  "lastname"
+    t.string  "email"
     t.string  "paypal_email"
     t.boolean "is_admin",     default: false
-    t.boolean "active",       default: false
+    t.boolean "status",       default: false
   end
 
   create_table "history_transactions", force: :cascade do |t|
@@ -72,13 +74,5 @@ ActiveRecord::Schema.define(version: 20150703010934) do
   end
 
   add_index "total_amounts", ["employee_id"], name: "index_total_amounts_on_employee_id", using: :btree
-
-  create_table "users", force: :cascade do |t|
-    t.string   "email"
-    t.string   "name"
-    t.string   "last_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
 end
