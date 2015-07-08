@@ -208,8 +208,8 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.1.0)
-  factory_girl_rails
   database_cleaner!
+  factory_girl_rails
   figaro
   jbuilder (~> 2.0)
   jquery-rails
