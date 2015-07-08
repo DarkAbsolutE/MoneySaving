@@ -6,11 +6,11 @@ gem 'rails', '4.2.3'
 # Use factory girls rails
 gem 'factory_girl_rails'
 # Use database cleaner
-gem 'database_cleaner', git: 'git@github.com:DatabaseCleaner/database_cleaner.git'
+gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use twitter bootstrap rails
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
