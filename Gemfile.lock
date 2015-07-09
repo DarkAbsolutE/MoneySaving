@@ -1,5 +1,18 @@
 GIT
-  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
+  remote: git://github.com/crowdint/bamboohr.git
+  revision: 69b788ac5bb24541871daca91379d511ea5f4830
+  specs:
+    bamboohr (0.0.1)
+      httparty (~> 0.13.0)
+
+GIT
+  remote: https://github.com/DatabaseCleaner/database_cleaner.git
+  revision: b8edac6bd04fb89a267201fa8d47066d511fd9de
+  specs:
+    database_cleaner (1.4.1)
+
+GIT
+  remote: https://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 935f53bb55ef736260fa2ef04e29da2fc3fb2b3f
   specs:
     twitter-bootstrap-rails (3.2.1)
@@ -7,12 +20,6 @@ GIT
       execjs (>= 2.2.2, >= 2.2)
       less-rails (>= 2.5.0)
       railties (>= 3.1)
-
-GIT
-  remote: git@github.com:DatabaseCleaner/database_cleaner.git
-  revision: d2a7ee40bfe4f64d755dd46007e862d334f05e2d
-  specs:
-    database_cleaner (1.4.1)
 
 GEM
   remote: https://rubygems.org/
@@ -58,6 +65,12 @@ GEM
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
+    capybara (2.4.4)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -72,16 +85,19 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.5.2)
-    ffaker (2.0.0)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.5.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
+    ffaker (2.0.0)
     figaro (1.1.1)
       thor (~> 0.14)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
+    httparty (0.13.5)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (2.3.0)
       activesupport (>= 3.0.0, < 5)
@@ -107,6 +123,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.7.0)
     multi_json (1.11.1)
+    multi_xml (0.5.5)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     pg (0.18.2)
@@ -196,15 +213,19 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bamboohr!
   byebug
+  capybara
   coffee-rails (~> 4.1.0)
-  factory_girl_rails
   database_cleaner!
+  factory_girl_rails
   ffaker
   figaro
   jbuilder (~> 2.0)

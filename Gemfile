@@ -3,12 +3,20 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
-# Use sqlite3 as the database for Active Record
+# Use factory girls rails
 gem 'factory_girl_rails'
+
 gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
 gem 'pg'
 gem 'ffaker'
 gem 'simple_form'
+
+# Use database cleaner
+gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
+# Use sqlite3 as the database for Active Record
+gem 'pg'
+# Use twitter bootstrap rails
+
 gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -37,8 +45,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use bamboohr
+gem 'bamboohr', github: 'crowdint/bamboohr'
 # Use pry for debugging
-  gem 'pry'
+gem 'pry'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -54,4 +64,7 @@ group :development, :test do
 
   # Use rspec
   gem 'rspec-rails', '~>3.0'
+
+  # Use capybara
+  gem 'capybara'
 end
