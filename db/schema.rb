@@ -11,18 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150709160620) do
+ActiveRecord::Schema.define(version: 20150703010934) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "employees", force: :cascade do |t|
-    t.string  "names"
-    t.string  "lastname"
-    t.string  "email"
-    t.string  "paypal_email"
-    t.boolean "is_admin",     default: false
-    t.boolean "status",       default: false
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "names"
+    t.string   "lastname"
+    t.string   "email"
+    t.string   "paypal_email"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.boolean  "is_admin",         default: false
+    t.boolean  "status",           default: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
   end
 
   create_table "history_transactions", force: :cascade do |t|
@@ -74,16 +80,5 @@ ActiveRecord::Schema.define(version: 20150709160620) do
   end
 
   add_index "total_amounts", ["employee_id"], name: "index_total_amounts_on_employee_id", using: :btree
-
-  create_table "users", force: :cascade do |t|
-    t.string   "provider"
-    t.string   "uid"
-    t.string   "name"
-    t.string   "oauth_token"
-    t.datetime "oauth_expires_at"
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
-    t.boolean  "is_admin",         default: false, null: false
-  end
 
 end
