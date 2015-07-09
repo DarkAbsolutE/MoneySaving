@@ -19,3 +19,4 @@
 .DS_Store
 *.log
 convetions-branch-name-git.txt
+config_var.sh
