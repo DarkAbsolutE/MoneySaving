@@ -17,12 +17,18 @@ ActiveRecord::Schema.define(version: 20150703010934) do
   enable_extension "plpgsql"
 
   create_table "employees", force: :cascade do |t|
-    t.string  "names"
-    t.string  "lastname"
-    t.string  "email"
-    t.string  "paypal_email"
-    t.boolean "is_admin",     default: false
-    t.boolean "status",       default: false
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "names"
+    t.string   "lastname"
+    t.string   "email"
+    t.string   "paypal_email"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.boolean  "is_admin",         default: false
+    t.boolean  "status",           default: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
   end
 
   create_table "history_transactions", force: :cascade do |t|
