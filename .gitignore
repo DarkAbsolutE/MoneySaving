@@ -20,3 +20,4 @@
 *.log
 convetions-branch-name-git.txt
 config_var.sh
+config_db.sh
