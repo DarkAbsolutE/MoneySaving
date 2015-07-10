@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20150703010934) do
   create_table "employees", force: :cascade do |t|
     t.string   "provider"
     t.string   "uid"
-    t.string   "names"
+    t.string   "name"
     t.string   "lastname"
     t.string   "email"
     t.string   "paypal_email"
