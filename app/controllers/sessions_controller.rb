@@ -1,12 +1,12 @@
 class SessionsController < ApplicationController
   def create
-    user = User.from_omniauth(env["omniauth.auth"])
-    session[:user_id] = user.id
+    employee = Employee.from_omniauth(env["omniauth.auth"])
+    session[:employee_id] = employee.id
     redirect_to root_path
   end
 
   def destroy
-    session[:user_id] = nil
+    session[:employee_id] = nil
     redirect_to root_path
   end
 end
