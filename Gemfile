@@ -5,13 +5,27 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.3'
 # Use factory girls rails
 gem 'factory_girl_rails'
+
+gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
+gem 'pg'
+gem 'ffaker'
+gem 'simple_form'
+
 # Use database cleaner
 gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
+
+# Use twitter bootstrap rails
+
+
+gem "omniauth-google-oauth2", "~> 0.2.6"
+
+
 # Use omniauth google oauth 2
 gem "omniauth-google-oauth2", "~> 0.2.6"
 # Use twitter bootstrap rails
+
 gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
