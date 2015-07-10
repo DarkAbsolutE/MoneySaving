@@ -4,7 +4,7 @@ class CreateEmployees < ActiveRecord::Migration
 	t.string :provider
 	t.string :uid
 
-	t.string :names
+	t.string :name
 	t.string :lastname
 	t.string :email
 	t.string :paypal_email

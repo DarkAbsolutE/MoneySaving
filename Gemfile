@@ -9,8 +9,9 @@ gem 'factory_girl_rails'
 gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
-# Use twitter bootstrap rails
+# Use omniauth google oauth 2
 gem "omniauth-google-oauth2", "~> 0.2.6"
+# Use twitter bootstrap rails
 gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -43,6 +44,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bamboohr', github: 'crowdint/bamboohr'
 # Use pry for debugging
 gem 'pry'
+# Use therubyracer
+gem "therubyracer"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
