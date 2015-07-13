@@ -4,7 +4,27 @@ gem 'rails', '4.2.3'
 gem 'factory_girl_rails'
 gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
 gem 'pg'
+gem 'ffaker'
+gem 'simple_form'
+
+# Use database cleaner
+
+gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
+gem 'pg'
 gem "omniauth-google-oauth2", "~> 0.2.6"
+
+
+# Use twitter bootstrap rails
+
+
+gem "omniauth-google-oauth2", "~> 0.2.6"
+
+
+# Use omniauth google oauth 2
+gem "omniauth-google-oauth2", "~> 0.2.6"
+# Use twitter bootstrap rails
+
+
 gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
