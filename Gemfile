@@ -6,25 +6,8 @@ gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleane
 gem 'pg'
 gem 'ffaker'
 gem 'simple_form'
-
-# Use database cleaner
-
-gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
-gem 'pg'
+gem 'bootstrap-sass', '~> 3.3.5'
 gem "omniauth-google-oauth2", "~> 0.2.6"
-
-
-# Use twitter bootstrap rails
-
-
-gem "omniauth-google-oauth2", "~> 0.2.6"
-
-
-# Use omniauth google oauth 2
-gem "omniauth-google-oauth2", "~> 0.2.6"
-# Use twitter bootstrap rails
-
-
 gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'

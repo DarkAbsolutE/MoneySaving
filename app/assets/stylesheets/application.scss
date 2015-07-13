@@ -1,0 +1,68 @@
+/*
+In bootstrap_and_overrides you should call the libraries you want to import
+
+
+
+    *= require bootstrap_and_overrides
+
+*/  
+
+
+
+  #border{
+    top:150px;
+    border-radius: 4px;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    font-family: Raleway;
+    color: white;
+
+    background-color: #303E4D;
+
+  }
+
+  .field{
+    margin-top: 20px;
+  }
+
+  #logo{
+    height: 80px;
+
+
+  }
+  input{
+    border: 0px;
+    background-color: white;
+    color: black;
+  }
+
+  #login{
+    margin-top: 10px;
+    background-color:white;
+    color:black;
+    border-radius: 4px;
+    width:80px;
+    text-align: center;
+
+  }
+
+
+  #user_email{
+    height: 40px;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+  }
+  #user_password{
+    height: 40px;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+
+  }
+
+  #centerform{
+    margin-top: 7%;
+
+  }

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :sessions, only: [:create, :destroy]
     resource :home, only: [:show]
 
-    root to: "home#show"
+    root to: "homes#login"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

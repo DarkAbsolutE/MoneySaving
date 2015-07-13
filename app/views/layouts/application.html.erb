@@ -7,17 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div>
+
         <% if current_employee %>
           Signed in as <strong><%= current_employee.name %></strong>!
           <%= link_to "Sign out", signout_path, id: "sign_out" %>
-        <% else %>
-          <%= link_to "Sign in with your crowdint account", "/auth/google_oauth2/", id: "sign_in" %>
         <% end %>
-      </div>
-      <div>
+
+
       <%= yield %>
-      </div>
+
 
 
 </body>
