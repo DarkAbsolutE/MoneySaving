@@ -6,9 +6,9 @@ class Employee < ActiveRecord::Base
   has_one :history_transaction
 
   def self.from_omniauth(auth)
-    where(provider: auth.provider, uid: auth.uid).first_or_initialize do |employee|
+    where(email: auth.info.email ).first do |employee|
       employee.provider = auth.provider
-      employee.uid      = auth.uid 
+      employee.uid      = auth.uid
       employee.save
     end
   end
