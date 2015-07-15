@@ -19,5 +19,7 @@
 .DS_Store
 *.log
 convetions-branch-name-git.txt
-config_var.sh
-config_db.sh
+config-var-staging.sh
+config-db-staging.sh
+config-var-production.sh
+config-db-production.sh
