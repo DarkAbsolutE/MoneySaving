@@ -5,9 +5,23 @@ In bootstrap_and_overrides you should call the libraries you want to import
 
     *= require bootstrap_and_overrides
 
-*/  
+*/
+  .form-control{
+    width: 210px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
+  }
+  .status-form{
+    width:20px;
+  }
 
+  input{
+    width: 200px;
+    text-align: center;
+
+  }
 
   #border{
     top:150px;

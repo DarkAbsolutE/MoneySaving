@@ -1,0 +1,32 @@
+
+
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 text-center ">
+    <div>
+      <h1>Update Employee</h1>
+      <%= form_for(@employee) do |f| %>
+
+        <%= f.label :name %><br>
+        <%= f.text_field :name, readonly: true, disabled: true %><br>
+
+        <%= f.label :lastname %><br>
+        <%= f.text_field :lastname, readonly: true, disabled: true %><br>
+
+        <%= f.label :email %><br>
+        <%= f.email_field :email, readonly: true, disabled: true  %><br>
+
+        <%= f.label :paypal_email %>
+        <%= f.email_field :paypal_email, class: 'form-control' %>
+
+        <%= f.label :status %><br>
+        <%= f.radio_button :status, true, :value => true, class: 'status-form'%>Activo
+        <%= f.radio_button :status, false, :value => false, class: 'status-form' %>Inactivo<br>
+
+        <%= f.submit "Save changes", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+
+
+  </div>
+</div>

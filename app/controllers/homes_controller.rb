@@ -6,6 +6,9 @@ class HomesController < ApplicationController
   end
 
   def login
+    if session[:employee_id] != nil
+      redirect_to home_path
+    end
   end
 
   private
