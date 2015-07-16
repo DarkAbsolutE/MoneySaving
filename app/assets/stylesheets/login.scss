@@ -1,6 +1,7 @@
 a{
-  text-decoration: none !important;
   color: lavender;
+  text-decoration: none !important;
+
 }
 
 a:hover{
@@ -8,14 +9,14 @@ a:hover{
 }
 
 #border{
-  top:150px;
   border-radius: 4px;
   border: 1px solid black;
-  width: 500px;
-  height: 500px;
-  font-family: Raleway;
-  color: white;
   background-color: #303E4D;
+  color: white;
+  font-family: Raleway;
+  height: 500px;
+  top:150px;
+  width: 500px;
 }
 
 #centerform{
@@ -31,19 +32,20 @@ a:hover{
 }
 
 #login{
-  margin-top: 60px;
+  border-radius: 4px;
   background-color:lightslategray;
   color:black;
-  border-radius: 4px;
-  width:300px;
   height:100px;
+  margin-top: 60px;
   text-align: center;
+  width:300px;
 }
 
 #whitefix{
-  margin-top: 28px;
-  text-decoration: none;
   font-size: 20px;
   font-weight: 400;
+  margin-top: 28px;
+  text-decoration: none;
+
 
 }
