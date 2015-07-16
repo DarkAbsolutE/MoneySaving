@@ -4,7 +4,16 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_employee
 
+  private
+
+  def check_session
+    if session[:employee_id] == nil
+      redirect_to root_path
+    end
+  end
+
   def current_employee
     @current_employee ||= Employee.find(session[:employee_id]) if session[:employee_id]
   end
+
 end
