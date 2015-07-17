@@ -1,20 +1,14 @@
-
-
 #centrado{
   font-size: 20px;
   margin: auto;
   vertical-align: middle;
-
 }
-
 
   #buttonss{
     margin-top: 15px;
     font-size: 25px;
       color: white;
   }
-
-
 
 #connected_user{
   color: white;
@@ -28,10 +22,7 @@
  color: white;
 }
 
-
-
 #buttons{
-
   font-size: 25px;
   color: white;
 }
@@ -50,7 +41,6 @@ margin-top: -20px;
 #title_employees{
   margin-left: -400px;
   color:black;
-
 }
 
  .text-right{
@@ -62,8 +52,6 @@ margin-top: -20px;
  .active{
  background-color: black ;
  height: 79px ;
-
-
 }
 
 body{
@@ -73,4 +61,41 @@ body{
 
 th{
   text-align: center;
+}
+
+.field{
+  margin-top: 21px;
+}
+
+.form-control{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 210px;
+}
+
+input{
+  border: 0px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  width:200px;
+}
+
+.status-form{
+  width:20px;
+}
+
+#user_email{
+  font-size: 20px;
+  height: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+#user_password{
+  font-size: 20px;
+  height: 40px;
+  text-align: center;
+  width: 400px;
 }
