@@ -18,6 +18,16 @@
 
 
 // Add your javascript here
+$(document).ready(function(){
+  $(".menu_1").on('click', function(e) {
+    e.preventDefault();
+    $(".menu_1").removeClass('.active');
+    $(this).addClass('.active');
+              });
+
+});
+
+
 $(function() {
   $("h1").animate({
     "margin-left": "18px"
@@ -29,10 +39,3 @@ $(function() {
   });
 
 });
-
-
-$(".hola").on('click', function(e) {
-  e.preventDefault();
-  $(".hola").removeClass('active');
-  $(this).addClass('active');
-})
