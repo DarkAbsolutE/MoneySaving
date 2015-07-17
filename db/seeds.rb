@@ -8,5 +8,3 @@
  ENV['ADMINS'].split(',').each do |email|
  Admin.find_or_initialize_by(email: email).save(validate: false)
 end
-
-

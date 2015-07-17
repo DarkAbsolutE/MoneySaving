@@ -8,15 +8,17 @@
                 <th id="centrado" >Name</th>
                 <th id="centrado" >Lastname</th>
                 <th id="centrado" >Email</th>
+                <th id="centrado" >Edit</th
               </center>
             </tr>
             <% @employee.each do |employee| %>
               <tr class="info">
                 <% if(employee.status==true) %>
-                  <td><%= employee.name %></td>
-                  <td><%= employee.lastname %></td>
-                  <td><%= employee.email %> <br></td>
-                <% end %>
+                  <td id="height-cell" ><%= employee.name %></td>
+                  <td id="height-cell" ><%= employee.lastname %></td>
+                  <td id="height-cell" ><%= employee.email %> <br></td>
+                  <td><button class="glyphicon glyphicon-pencil btn ac btn-default" aria-hidden="true"></button></td>
+            <% end %>
               </tr>
             <% end %>
         </table>
@@ -30,6 +32,7 @@
                 <th id="centrado" >Name</th>
                 <th id="centrado" >Lastname</th>
                 <th id="centrado">Email</th>
+                <th id="centrado">Edit</th
               </center>
             </tr>
             <% @employee.each do |employee| %>
@@ -38,6 +41,7 @@
                   <td><%= employee.name %></td>
                   <td><%= employee.lastname %></td>
                   <td><%= employee.email %> <br></td>
+                  <td><button class="glyphicon glyphicon-pencil btn in btn-default" aria-hidden="true"></button></td>
                 <% end %>
               </tr>
             <% end %>

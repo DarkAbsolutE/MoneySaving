@@ -4,7 +4,7 @@ class EmployeesController < ApplicationController
 
   def index
       @employee = Employee.all
-    end
+  end
 
   def edit
     @employee = Employee.find(params[:id])
