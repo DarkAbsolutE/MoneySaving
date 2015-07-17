@@ -4,8 +4,9 @@ In bootstrap_and_overrides you should call the libraries you want to import
 
 
     *= require bootstrap_and_overrides
+    *= require_tree .
 
-*/  
+*/
 
 
 
@@ -46,7 +47,7 @@ In bootstrap_and_overrides you should call the libraries you want to import
     text-align: center;
 
   }
-
+  
 
   #user_email{
     height: 40px;

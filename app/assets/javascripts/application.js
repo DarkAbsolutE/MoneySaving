@@ -13,5 +13,26 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require turbolinks
+
 //= require_tree .
+
+
+// Add your javascript here
+$(function() {
+  $("h1").animate({
+    "margin-left": "18px"
+  }, "slow");
+
+  $(".nav li").on("click", function() {
+    $(".nav li").removeClass("active");
+    $(this).addClass("active");
+  });
+
+});
+
+
+$(".hola").on('click', function(e) {
+  e.preventDefault();
+  $(".hola").removeClass('active');
+  $(this).addClass('active');
+})

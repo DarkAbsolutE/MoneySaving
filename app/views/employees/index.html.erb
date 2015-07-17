@@ -1,0 +1,47 @@
+<div id="background_employees" class="container-fluid">
+  <div class="row">
+    <div style="margin-left:-345px;" class="col-md-6  text-center">
+      <h1 id="title_employees">Active Employees</h1>
+        <table class="table table-bordered">
+            <tr class="active" >
+              <center>
+                <th id="centrado" >Name</th>
+                <th id="centrado" >Lastname</th>
+                <th id="centrado" >Email</th>
+              </center>
+            </tr>
+            <% @employee.each do |employee| %>
+              <tr class="info">
+                <% if(employee.status==true) %>
+                  <td><%= employee.name %></td>
+                  <td><%= employee.lastname %></td>
+                  <td><%= employee.email %> <br></td>
+                <% end %>
+              </tr>
+            <% end %>
+        </table>
+    </div>
+
+    <div style="margin-left:-30px;"class="col-md-6  text-center ">
+      <h1 id="title_employees">Inactive Employees</h1>
+        <table class="table table-bordered">
+            <tr id="centrado" class="active" >
+              <center>
+                <th id="centrado" >Name</th>
+                <th id="centrado" >Lastname</th>
+                <th id="centrado">Email</th>
+              </center>
+            </tr>
+            <% @employee.each do |employee| %>
+              <tr class="danger">
+                <% if(employee.status==false) %>
+                  <td><%= employee.name %></td>
+                  <td><%= employee.lastname %></td>
+                  <td><%= employee.email %> <br></td>
+                <% end %>
+              </tr>
+            <% end %>
+        </table>
+    </div>
+  </div>
+</div>

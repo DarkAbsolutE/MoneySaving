@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Savings</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <nav id= "header" class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="https://www.crowdint.com/images/sprites/logo_crowd.svg" alt="" class="pull-left"/>
+		      <button  type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#items_de_navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="buttonss" class="navbar-brand" <%= link_to "Savings",home_path, id: 'text_employee'%>></a>
+        </div>
 
-        <% if current_employee %>
-          Signed in as <strong><%= current_employee.name %></strong>!
-          <%= link_to "Sign out", signout_path, id: "sign_out" %>
-        <% end %>
-
-
-      <%= yield %>
-
-
-
+        <div class="collapse navbar-collapse" id="items_de_navbar">
+          <ul id="buttons" class="nav navbar-nav">
+		        <li ><%= link_to "Employees",employees_path, id: 'text_employee'%></li>
+            <li id="connected_user">
+              <% if current_employee %>
+                <div class="text-right">
+                  <p class= "col-md-12 col-md-offset-12
+                             col-sm-12 col-sm-offset-6 ">
+                    Signed in as <strong><%= current_employee.name %></strong>!
+                    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+                  </p>
+                </div>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+	  <!-- /.container -->
+</nav>
+  </header>
+  <%= yield %>
 </body>
 </html>
