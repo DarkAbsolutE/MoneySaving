@@ -11,19 +11,9 @@
                 <th id="centrado" >Edit</th
               </center>
             </tr>
-            <% @employee.each do |employee| %>
-              <tr class="info">
-                <% if(employee.status==true) %>
-                  <td id="height-cell" ><%= employee.name %></td>
-                  <td id="height-cell" ><%= employee.lastname %></td>
-                  <td id="height-cell" ><%= employee.email %> <br></td>
-                  <td><button class="glyphicon glyphicon-pencil btn ac btn-default" aria-hidden="true"></button></td>
-            <% end %>
-              </tr>
-            <% end %>
+            <%= render @employees.active %>
         </table>
     </div>
-
     <div class="col-md-6  text-center ">
       <h1 id="title_employees">Inactive Employees</h1>
         <table class="table table-bordered">
@@ -35,16 +25,7 @@
                 <th id="centrado">Edit</th
               </center>
             </tr>
-            <% @employee.each do |employee| %>
-              <tr class="danger">
-                <% if(employee.status==false) %>
-                  <td><%= employee.name %></td>
-                  <td><%= employee.lastname %></td>
-                  <td><%= employee.email %> <br></td>
-                  <td><button class="glyphicon glyphicon-pencil btn in btn-default" aria-hidden="true"></button></td>
-                <% end %>
-              </tr>
-            <% end %>
+            <%= render @employees.inactive %>
         </table>
     </div>
   </div>
