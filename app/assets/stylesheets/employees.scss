@@ -1,3 +1,4 @@
+
 .in:focus, .in:active:focus, .in.active:focus {
     outline: 0 none;
     box-shadow: 0 3px 0 0 red;
@@ -79,9 +80,7 @@ th{
   text-align: center;
 }
 
-.field{
-  margin-top: 21px;
-}
+.field{ margin-top: 21px; }
 
 .form-control{
   margin-left: auto;
@@ -93,14 +92,13 @@ th{
 input{
   border: 0px;
   background-color: white;
+  border: 0px;
   color: black;
   text-align: center;
   width:200px;
 }
 
-.status-form{
-  width:20px;
-}
+.status-form{ width:20px; }
 
 #user_email{
   font-size: 20px;

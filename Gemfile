@@ -20,6 +20,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bamboohr', github: 'crowdint/bamboohr'
 gem 'pry'
 gem "therubyracer"
+gem "rails_best_practices"
 
 group :development, :test do
   gem 'byebug'
