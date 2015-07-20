@@ -3,7 +3,7 @@ class EmployeesController < ApplicationController
   before_action :check_session
 
   def index
-      @employees = Employee.all
+    @employees = Employee.all
   end
 
   def edit

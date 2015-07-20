@@ -3,29 +3,25 @@
     <div style="margin-left:-258px;" class="col-md-6  text-center">
       <h1 id="title_employees">Active Employees</h1>
         <table class="table table-bordered">
-            <tr class="active" >
-              <center>
-                <th id="centrado" >Name</th>
-                <th id="centrado" >Lastname</th>
-                <th id="centrado" >Email</th>
-                <th id="centrado" >Edit</th
-              </center>
-            </tr>
-            <%= render @employees.active %>
+          <tr id="center" class="active" >
+            <th>Name</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Edit</th>
+          </tr>
+          <%= render @employees.active %>
         </table>
     </div>
     <div class="col-md-6  text-center ">
       <h1 id="title_employees">Inactive Employees</h1>
         <table class="table table-bordered">
-            <tr id="centrado" class="active" >
-              <center>
-                <th id="centrado" >Name</th>
-                <th id="centrado" >Lastname</th>
-                <th id="centrado">Email</th>
-                <th id="centrado">Edit</th
-              </center>
-            </tr>
-            <%= render @employees.inactive %>
+          <tr id="center" class="active" >
+            <th>Name</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Edit</th>
+          </tr>
+          <%= render @employees.inactive %>
         </table>
     </div>
   </div>
