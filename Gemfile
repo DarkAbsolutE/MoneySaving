@@ -14,12 +14,13 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'figaro'
 gem 'jquery-rails'
-gem 'turbolinks'
+
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bamboohr', github: 'crowdint/bamboohr'
 gem 'pry'
 gem "therubyracer"
+gem "rails_best_practices"
 
 group :development, :test do
   gem 'byebug'

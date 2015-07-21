@@ -1,5 +1,10 @@
 class EmployeesController < ApplicationController
+
   before_action :check_session
+
+  def index
+    @employees = Employee.all
+  end
 
   def edit
     @employee = Employee.find(params[:id])
@@ -12,7 +17,7 @@ class EmployeesController < ApplicationController
   def update
     @employee = Employee.find(params[:id])
     if @employee.update_attributes(employee_params)
-      redirect_to employee_path
+      redirect_to employees_path
     else
       flash[:notice] = "Please, try again"
     end
