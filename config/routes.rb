@@ -5,8 +5,9 @@ Rails.application.routes.draw do
     resources :employees, except: [:create, :new]
     resources :sessions, only: [:create, :destroy]
     resource :home, only: [:show]
-
+    resources :employees
     root to: "homes#login"
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
