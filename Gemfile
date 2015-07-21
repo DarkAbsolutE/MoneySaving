@@ -1,31 +1,31 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.3'
-gem 'factory_girl_rails'
-gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
-gem 'pg'
-gem 'ffaker'
-gem 'simple_form'
-gem 'bootstrap-sass', '~> 3.3.5'
-gem "omniauth-google-oauth2", "~> 0.2.6"
-gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'figaro'
-gem 'jquery-rails'
-
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bamboohr', github: 'crowdint/bamboohr'
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
+gem 'factory_girl_rails'
+gem 'ffaker'
+gem 'figaro'
+gem 'jbuilder', '~> 2.0'
+gem 'jquery-rails'
+gem "omniauth-google-oauth2", "~> 0.2.6"
+gem 'pg'
 gem 'pry'
-gem "therubyracer"
+gem 'rails', '4.2.3'
 gem "rails_best_practices"
+gem 'sass-rails', '~> 5.0'
+gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'simple_form'
+gem "therubyracer"
+gem 'turbolinks'
+gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-  gem 'rspec-rails', '~>3.0'
   gem 'capybara'
+  gem 'rspec-rails', '~>3.0'
+  gem 'spring'
+  gem 'web-console', '~> 2.0'
 end
