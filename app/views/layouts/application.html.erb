@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script>
+  $( document ).ready(function() {
+      console.log( "document loaded" );
+  });
+
+  $( window ).load(function() {
+      console.log( "window loaded" );
+  });
+  </script>
   <title>Savings</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <%= render 'layouts/navbar' unless @disable_nav %>
+  <%= yield %>
 </body>
 </html>
