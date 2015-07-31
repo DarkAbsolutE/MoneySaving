@@ -26,30 +26,30 @@ module BambooHR
     end
 
     def self.create_salary(id)
-	amount_data = {
-          employee_id: id,
-          amount: 0.00
-        }
-        salary = Salary.create_with(amount_data).find_or_initialize_by(employee_id: id)
-	print '.' if salary.save(validate: false)
+      amount_data = {
+        employee_id: id,
+        amount: 0.00
+      }
+      salary = Salary.create_with(amount_data).find_or_initialize_by(employee_id: id)
+      print '.' if salary.save(validate: false)
     end
 
     def self.create_saving_employee(id)
-        amount_data = {
-          employee_id: id,
-          amount: 3.0
-        }
-        saving_employee = SavingEmployee.create_with(amount_data).find_or_initialize_by(employee_id: id)
-        print '.' if saving_employee.save(validate: false)
+      amount_data = {
+        employee_id: id,
+        amount: 3.0
+      }
+      saving_employee = SavingEmployee.create_with(amount_data).find_or_initialize_by(employee_id: id)
+      print '.' if saving_employee.save(validate: false)
     end
 
     def self.create_saving_company(id)
-        amount_data = {
-          employee_id: id,
-          amount: 3.0
-        }
-        saving_company = SavingCompany.create_with(amount_data).find_or_initialize_by(employee_id: id)
-        print '.' if saving_company.save(validate: false)
+      amount_data = {
+        employee_id: id,
+        amount: 3.0
+      }
+      saving_company = SavingCompany.create_with(amount_data).find_or_initialize_by(employee_id: id)
+      print '.' if saving_company.save(validate: false)
     end
 
     def self.client
