@@ -6,5 +6,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 ENV['ADMINS'].split(',').each do |email|
- Admin.find_or_initialize_by(email: email).save(validate: false)
+  Admin.find_or_initialize_by(email: email).save(validate: false)
 end
