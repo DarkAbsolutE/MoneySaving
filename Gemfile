@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 gem 'bamboohr', github: 'crowdint/bamboohr'
 gem 'bootstrap-sass', '~> 3.3.5'
-gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
 gem 'coffee-rails', '~> 4.1.0'
+gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
 gem 'factory_girl_rails'
 gem 'ffaker'
 gem 'figaro'
@@ -18,6 +18,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
 gem "therubyracer"
+gem 'turbolinks'
 gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'uglifier', '>= 1.3.0'
 
