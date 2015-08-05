@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :sessions, only: [:create, :destroy]
     resource :home, only: [:show]
     resources :employees
+    resources :salaries, only: [:update, :edit]
     root to: "homes#login"
 
 

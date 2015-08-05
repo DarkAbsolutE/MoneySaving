@@ -8,6 +8,10 @@
   outline: 0 none;
 }
 
+.title-update-user{
+  text-align: center;
+}
+
 #height-cell {
   height: 30%;
   vertical-align: middle;
@@ -43,6 +47,55 @@
   font-size: 25px;
 }
 
+.Update-title{
+  margin: 0 auto;
+  display: block;
+  margin-left: 0px !important;
+  margin-top: 40px;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form-update-employee__label-decoration{
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form-update-employee__text-field-decoration{
+  border-radius: 6px;
+  height: 30px;
+  width: 210px;
+  text-align: center;
+  border: none;
+
+}
+
+.form-update-employee__submit-btn{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.update-border-decoration{
+  background-color: lightslategray;
+  border-radius: 4px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.form-update-employee{
+  text-align: center;
+}
+
+.user-img{
+  display: block;
+  margin: 0 auto;
+  border-radius: 150px;
+  border: 15px solid gray;
+  margin-top: 20px;
+}
+
 #header{
   height: 80px;
 }
@@ -73,37 +126,3 @@
 body{font-family: Raleway;}
 
 th{text-align: center;}
-
-.field{ margin-top: 21px;}
-
-.form-control{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 210px;
-}
-
-input{
-  background-color: white;
-  border: 0px;
-  border: 0px;
-  color: black;
-  text-align: center;
-  width:200px;
-}
-
-.status-form{ width:20px;}
-
-#user_email{
-  font-size: 20px;
-  height: 40px;
-  text-align: center;
-  width: 400px;
-}
-
-#user_password{
-  font-size: 20px;
-  height: 40px;
-  text-align: center;
-  width: 400px;
-}
