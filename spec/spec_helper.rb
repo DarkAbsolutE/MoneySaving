@@ -4,6 +4,35 @@ require 'rspec/rails'
 require 'capybara/rspec'
 require 'capybara/rails'
 
+OmniAuth.configure do |config|
+  config.test_mode = true
+  config.add_mock(:google_oauth2, OmniAuth::AuthHash.new({
+    provider: "google_oauth2",
+    uid: "123456789",
+    info: {
+      name: "John Doe",
+      email: "john@crowdint.com"
+    },
+    credentials: {
+      token: "token",
+      refresh_token: "another_token",
+      expires_at: 1354920555,
+      expires: true
+    }})
+  )
+end
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/support/vcr_cassettes'
+  c.hook_into :webmock
+  c.default_cassette_options =  { record: :none }
+  c.configure_rspec_metadata!
+  c.ignore_localhost = true
+  c.allow_http_connections_when_no_cassette = true
+end
+
+Capybara.default_host = 'http://localhost:3000'
+
 RSpec.configure do |config|
 
 config.infer_spec_type_from_file_location!
