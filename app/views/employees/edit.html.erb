@@ -1,27 +1,31 @@
-<div class="row">
-  <div class="col-md-6 col-md-offset-1 text-center ">
-    <div>
-      <h1>Update Employee</h1>
-      <%= form_for(@employee) do |f| %>
+<div class="update-border-decoration">
+  <h1 class="Update-title col-md-12 text-center">Update Employee</h1>
+  <hr>
+  <div class="user-example">
+    <%= image_tag image_path('user.png'), :class => "user-img" %>
+  </div>`
+      <div class="form-update-employee">
+        <%= form_for(@employee) do |f| %>
 
-        <%= f.label :name %><br>
-        <%= f.text_field :name, readonly: true, disabled: true %><br>
+          <%= f.label :name, :class => "form-update-employee__label-decoration"%><br>
+          <%= f.text_field :name, readonly: true, disabled: true, :class => "form-update-employee__text-field-decoration" %><br>
 
-        <%= f.label :lastname %><br>
-        <%= f.text_field :lastname, readonly: true, disabled: true %><br>
+          <%= f.label :lastname, :class => "form-update-employee__label-decoration"%><br>
+          <%= f.text_field :lastname, readonly: true, disabled: true, :class => "form-update-employee__text-field-decoration" %><br>
 
-        <%= f.label :email %><br>
-        <%= f.email_field :email, readonly: true, disabled: true  %><br>
+          <%= f.label :email, :class => "form-update-employee__label-decoration" %><br>
+          <%= f.email_field :email, readonly: true, disabled: true, :class => "form-update-employee__text-field-decoration"  %><br>
 
-        <%= f.label :paypal_email %>
-        <%= f.email_field :paypal_email, class: 'form-control' %>
+          <%= f.label :paypal_email, :class => "form-update-employee__label-decoration" %><br>
+          <%= f.email_field :paypal_email, :class => "form-update-employee__text-field-decoration" %> <br>
 
-        <%= f.label :status %><br>
-        <%= f.radio_button :status, true, value: true, class: 'status-form'%>Activo
-        <%= f.radio_button :status, false, value: false, class: 'status-form' %>Inactivo<br>
+          <%= f.submit "Save changes", class: "form-update-employee__submit-btn btn btn-primary" %>
+        <% end %>
 
-        <%= f.submit "Save changes", class: "btn btn-primary" %>
-      <% end %>
-    </div>
-  </div>
+        <%= form_for(@salary) do |f| %>
+        <%= f.label :Salary, :class => "form-update-employee__label-decoration" %><br>
+        <%= f.text_field :amount, :class => "form-update-employee__text-field-decoration"  %>
+          <%= f.submit "Save changes", class: "form-update-employee__submit-btn btn btn-primary" %>
+        <% end %>
+      </div>
 </div>

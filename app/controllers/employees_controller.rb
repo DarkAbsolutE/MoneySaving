@@ -1,6 +1,6 @@
 class EmployeesController < ApplicationController
 
-  before_action :check_session
+  before_action :check_session, :check_database_existance
 
   def index
     @employees = Employee.all
@@ -8,6 +8,7 @@ class EmployeesController < ApplicationController
 
   def edit
     @employee = Employee.find(params[:id])
+    @salary = Salary.find(params[:id])
   end
 
   def show
