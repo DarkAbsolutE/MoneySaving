@@ -11,14 +11,14 @@ module BambooHR
     end
 
     def self.create_employee(data)
-      user_data = {
+      employee_data = {
         name: data['firstName'],
         lastname: data['lastName'],
 	status: true,
 	is_admin: is_admin?(data)
       }
       if importable?(data)	
-        employee = Employee.create_with(user_data).find_or_initialize_by(email: data['workEmail'])
+        employee = Employee.create_with(employee_data).find_or_initialize_by(email: data['workEmail'])
         print '.' if employee.save(validate: false)
       end
 
