@@ -13,6 +13,8 @@ describe EmployeesController, type: :feature do
         find('#salary_amount').set('2000.0')
         first('.form-update-employee__submit-btn-salary').click
         visit('/employees/1/edit')
+        expect(page).to have_selector("input[value='john@paypal.com']")
+        expect(page).to have_selector("input[value='2000.0']")
         save_and_open_page
       end
     end
