@@ -23,9 +23,12 @@
         <% end %>
 
         <%= form_for(@salary) do |f| %>
-        <%= f.label :Salary, :class => "form-update-employee__label-decoration" %><br>
-        <%= f.text_field :amount, :class => "form-update-employee__text-field-decoration"  %>
-          <%= f.submit "Save changes", class: "form-update-employee__submit-btn btn btn-primary" %>
+
+          <%= f.label :Salary, :class => "form-update-employee__label-decoration" %><br>
+          <%= f.text_field :amount, :class => "form-update-employee__text-field-decoration"  %>
+
+          <%= f.submit "Save changes", class: "form-update-employee__submit-btn-salary btn btn-primary" %>
+
         <% end %>
       </div>
 </div>

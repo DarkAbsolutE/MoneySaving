@@ -3,8 +3,8 @@ module BambooHR
     def self.employees
       employees = client.employee_list
       employees['employees'].each do |data|
-      employee = create_employee(data)
-  create_salary(employee.id) if employee
+        employee = create_employee(data)
+	create_salary(employee.id) if employee
 	create_saving_employee(employee.id) if employee
 	create_saving_company(employee.id) if employee
       end
@@ -17,9 +17,8 @@ module BambooHR
 	status: true,
 	is_admin: is_admin?(data)
       }
-
       if importable?(data)
-        employee = Employee.create_with(user_data).find_or_initialize_by(email: data['workEmail'])
+        employee = Employee.create_with(employee_data).find_or_initialize_by(email: data['workEmail'])
         print '.' if employee.save(validate: false)
       end
 
@@ -65,7 +64,7 @@ module BambooHR
     def self.importable?(data)
       data['workEmail'].present?
     end
-    
+
     def self.is_admin?(data)
       if data['workEmail'] == ENV['EMAIL_ADMIN']
         true
