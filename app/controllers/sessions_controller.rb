@@ -1,8 +1,8 @@
 class SessionsController < ApplicationController
   def create
-    employee = Employee.from_omniauth(env["omniauth.auth"])
-    if employee.is_admin
-      session[:employee_id] = employee.id
+    @employee = Employee.from_omniauth(env["omniauth.auth"])
+    if @employee.is_admin
+      session[:employee_id] = @employee.id
       redirect_to home_path
       flash[:notice] = "Log in succesful"
     else

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+
 gem 'bamboohr', github: 'crowdint/bamboohr'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'coffee-rails', '~> 4.1.0'
@@ -28,4 +29,5 @@ group :development, :test do
   gem 'rspec-rails', '~>3.0'
   gem 'spring'
   gem 'web-console', '~> 2.0'
+  gem 'selenium-webdriver'
 end

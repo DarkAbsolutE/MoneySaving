@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+    put 'change_status/:id', to: 'employees#change_status', as:'change_status'
     get 'auth/:provider/callback', to: 'sessions#create'
     get 'auth/failure', to: redirect('/')
     get 'signout', to: 'sessions#destroy', as: 'signout'
