@@ -1,5 +1,4 @@
 require 'spec_helper'
-
 feature 'changestatus' do
 	background do
 		FactoryGirl.create(:admin, email: 'john@crowdint.com', name: 'Jonh Doe', is_admin: true, id: 1)
