@@ -19,13 +19,23 @@
           <%= f.label :paypal_email, :class => "form-update-employee__label-decoration" %><br>
           <%= f.email_field :paypal_email, :class => "form-update-employee__text-field-decoration" %> <br>
 
+          <%= f.fields_for :salary do |f| %>
+          <%= f.label :Salary, :class => "form-update-employee__label-decoration" %><br>
+          <%= f.text_field :amount, :class => "form-update-employee__text-field-decoration"  %> <br>
+          <% end %>
+
+          <%= f.fields_for :saving_company do |f| %>
+          <%= f.label :Saving_Company, :class => "form-update-employee__label-decoration" %><br>
+          <%= f.text_field :amount, :class => "form-update-employee__text-field-decoration"  %> <br>
+          <% end %>
+
+          <%= f.fields_for :saving_employee do |f| %>
+          <%= f.label :Saving_Employee, :class => "form-update-employee__label-decoration" %><br>
+          <%= f.text_field :amount, :class => "form-update-employee__text-field-decoration"  %> <br>
+          <% end %>
+
           <%= f.submit "Save changes", class: "form-update-employee__submit-btn btn btn-primary" %>
         <% end %>
 
-        <%= form_for(@salary) do |f| %>
-        <%= f.label :Salary, :class => "form-update-employee__label-decoration" %><br>
-        <%= f.text_field :amount, :class => "form-update-employee__text-field-decoration"  %>
-          <%= f.submit "Save changes", class: "form-update-employee__submit-btn btn btn-primary" %>
-        <% end %>
       </div>
 </div>

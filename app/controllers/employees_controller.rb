@@ -9,6 +9,8 @@ class EmployeesController < ApplicationController
   def edit
     @employee = Employee.find(params[:id])
     @salary = Salary.find(params[:id])
+    @saving_company = SavingCompany.find(params[:id])
+    @saving_employee = SavingEmployee.find(params[:id])
   end
 
   def show
@@ -27,7 +29,7 @@ class EmployeesController < ApplicationController
   private
 
   def employee_params
-    params.require(:employee).permit(:name, :email, :paypal_email, :status)
+    params.require(:employee).permit(:name, :email, :paypal_email, :status, salary_attributes:[:amount])
   end
 
 end
