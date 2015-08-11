@@ -18,7 +18,7 @@ class EmployeesController < ApplicationController
   def update
     @employee = Employee.find(params[:id])
     if @employee.update_attributes(employee_params)
-      redirect_to employees_path
+      redirect_to home_path
     else
       flash[:notice] = "Please, try again"
     end
