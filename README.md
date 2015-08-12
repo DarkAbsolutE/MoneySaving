@@ -73,4 +73,4 @@ We are using figaro to protect env variables with sensible information, so pleas
 
 ###Bamboohr client Initialization
 
-    $ rake bamboo:sync_users
+    $ rake bamboo:sync_employees

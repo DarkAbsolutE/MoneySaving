@@ -26,8 +26,15 @@ gem 'uglifier', '>= 1.3.0'
 group :development, :test do
   gem 'byebug'
   gem 'capybara'
+  gem 'launchy', '~> 2.4.3'
   gem 'rspec-rails', '~>3.0'
   gem 'spring'
+  gem 'vcr'
   gem 'web-console', '~> 2.0'
   gem 'selenium-webdriver'
+end
+
+group :test do
+  gem "nyan-cat-formatter"
+  gem 'webmock' 
 end
