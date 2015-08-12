@@ -4,6 +4,9 @@ require 'rspec/rails'
 require 'capybara/rspec'
 require 'capybara/rails'
 require 'vcr'
+require 'simplecov'
+
+SimpleCov.start 'rails'
 
 OmniAuth.configure do |config|
   config.test_mode = true
