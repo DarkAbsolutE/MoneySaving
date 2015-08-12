@@ -5,46 +5,63 @@ describe BambooHR::Sync do
 
   let(:employee_data) do
     {
-     'id'                 => '1',
-     'displayName'        => 'Cyan Aguirre',
      'firstName'          => 'Cyan',
      'lastName'           => 'Mendoza',
-     'jobTitle'           => 'Intern',
-     'workPhone'          => nil,
-     'workPhoneExtension' => nil,
-     'mobilePhone'        => '312-134-7689',
-     'workEmail'          => 'cyan@crowd.com',
-     'department'         => 'Development',
-     'location'           => 'Colima',
-     'division'           => nil,
-     'photoUploaded'      => false,
-     'photoUrl'           => 'https://crowdint.bamboohr.com/images/photo_placeholder.gif',
-     'canUploadPhoto'     => 1
+     'workEmail'          => 'cyan@crowd.com'
     }
   end
 
-  describe :client do
-    it 'returns the configured BambooHR::Client object' do
-      expect(BambooHR::Sync.client).to be_a(BambooHR::Client)
-      expect(BambooHR::Sync.client.key).to eq 'API_TOKEN'
-      expect(BambooHR::Sync.client.subdomain).to eq 'crowdint'
+  describe ".client" do
+    let(:client) { BambooHR::Sync.client }
+
+    it 'returns the client configuration' do
+      expect(client).to be_a(BambooHR::Client)
+    end
+
+    it 'returns the API TOKEN key' do
+      expect(client.key).to eq 'API_TOKEN'
+    end
+
+    let 'return the subdomain crowdint' do
+      expect(client.subdomain).to eq 'crowdint'
     end
   end
 
-  describe :employees, vcr: { cassette_name: 'employee_list' } do
+  describe ".employees" do
+    let(:client) { double("Client", employee_list: {"employees" => [employee_data]}) }
+
+    before do
+      allow(BambooHR::Sync).to receive(:client) { client }
+    end
+
     it 'calls create_employee to every employee on the list' do
-      expect(BambooHR::Sync).to receive(:create_employee).with(employee_data)
+      expect(BambooHR::Sync).to receive(:create_employee)
       BambooHR::Sync.employees
     end
   end
 
-  describe :create_employee do
-    it 'creates the employee with the provided data and saves it to the database' do
-      employee = Employee.new
-      expect(Employee).to receive(:new) { employee }
-      expect(employee).to receive(:save)
+  describe ".create_employee" do
+    context 'When is importable' do
+      let(:new_employee) { Employee.new }
 
-      BambooHR::Sync.create_employee(employee_data)
+      before do
+        allow(BambooHR::Sync).to receive(:importable?) { true }
+        allow(Employee).to receive_message_chain(:where, :first_or_create) { new_employee }
+      end
+
+      it "returns new employee" do
+        expect(BambooHR::Sync.create_employee(employee_data)).to be_a Employee
+      end
+    end
+
+    context 'When is not importable' do
+      before do
+        allow(BambooHR::Sync).to receive(:importable?) { false }
+      end
+
+      it "returns nil" do
+        expect(BambooHR::Sync.create_employee(employee_data)).to be_nil
+      end
     end
   end
 end

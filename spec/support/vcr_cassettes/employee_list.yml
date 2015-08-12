@@ -1,0 +1,430 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://d15c4730fb88ad3d031cb2a60cd9b2c841589889:x@api.bamboohr.com/api/gateway.php/crowdint/v1/employees/directory
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Aug 2015 22:20:48 GMT
+      Server:
+      - Apache
+      Vary:
+      - User-Agent
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"fields":[{"id":"displayName","type":"text","name":"Display name"},{"id":"firstName","type":"text","name":"First
+        name"},{"id":"lastName","type":"text","name":"Last name"},{"id":"nickname","type":"text","name":"Nick
+        name"},{"id":"gender","type":"gender","name":"Gender"},{"id":"jobTitle","type":"list","name":"Job
+        title"},{"id":"workPhone","type":"text","name":"Work Phone"},{"id":"mobilePhone","type":"text","name":"Mobile
+        Phone"},{"id":"workEmail","type":"email","name":"Work Email"},{"id":"department","type":"list","name":"Department"},{"id":"location","type":"list","name":"Location"},{"id":"division","type":"list","name":"Division"},{"id":"workPhoneExtension","type":"text","name":"Work
+        Ext."},{"id":"photoUploaded","type":"bool","name":"Employee photo exists"},{"id":"photoUrl","type":"url","name":"Employee
+        photo url"},{"type":"bool","name":"","id":"canUploadPhoto"}],"employees":[{"id":"40541","displayName":"Ernesto
+        Alcaraz","firstName":"Ernesto","lastName":"Alcaraz","nickname":"Neto","gender":"Male","jobTitle":"Trainee","workPhone":null,"mobilePhone":"312-107-27-67","workEmail":"ernesto.alcaraz@crowdint.com","department":"Development","location":"Colima","division":"Trainee","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40541-1-1.jpg","canUploadPhoto":0},{"id":"40451","displayName":"Nora
+        Alvarado","firstName":"Nora","lastName":"Alvarado","nickname":"","gender":"Female","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"3121073486","workEmail":"nora.alvarado@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40451-1-1.jpg","canUploadPhoto":0},{"id":"40414","displayName":"Carlos
+        Araoz","firstName":"Carlos","lastName":"Araoz","nickname":"Cayitos","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 142-1548","workEmail":"carlos.grageda@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40414-1-1.jpg","canUploadPhoto":0},{"id":"40505","displayName":"Fernando
+        Barajas","firstName":"Fernando","lastName":"Barajas","nickname":"Fer","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3121266037","workEmail":"fernando.barajas@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40505-1-1.jpg","canUploadPhoto":0},{"id":"40456","displayName":"Ulices
+        Barajas","firstName":"Ulices","lastName":"Barajas","nickname":"","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 123-8968","workEmail":"ulices.barajas@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40456-1-1.jpg","canUploadPhoto":0},{"id":"40553","displayName":"Jos\u00e9
+        Alberto Barranco","firstName":"Jos\u00e9 Alberto","lastName":"Barranco","nickname":"Paque","gender":"Male","jobTitle":"Magento
+        Developer","workPhone":null,"mobilePhone":"4432213240","workEmail":null,"department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40553-2-1.jpg","canUploadPhoto":0},{"id":"40545","displayName":"Guillermo
+        Barreto","firstName":"Guillermo","lastName":"Barreto","nickname":null,"gender":"Male","jobTitle":"Janitor","workPhone":null,"mobilePhone":"312-339-7494","workEmail":null,"department":"Operations","location":"Colima","division":null,"workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40545-1-1.jpg","canUploadPhoto":0},{"id":"40443","displayName":"Hector
+        Bustillos","firstName":"Hector","lastName":"Bustillos","nickname":"Rojo","gender":"Male","jobTitle":"Product
+        Owner","workPhone":"(312) 323-71-75","mobilePhone":"(312) 1233934","workEmail":"hector.bustillos@crowdint.com","department":"Project
+        Management","location":"Colima","division":"Senior","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40443-1-1.jpg","canUploadPhoto":0},{"id":"40556","displayName":"Estefania
+        Cano","firstName":"Estefania","lastName":"Cano","nickname":"Fany","gender":"Male","jobTitle":"Intern","workPhone":null,"mobilePhone":"312-301-2815","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40556-2-1.jpg","canUploadPhoto":0},{"id":"40494","displayName":"Rogelio
+        Castillo","firstName":"Rogelio","lastName":"Castillo","nickname":null,"gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3123188661","workEmail":"adrian.castillo@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40494-1-1.jpg","canUploadPhoto":0},{"id":"40472","displayName":"Ana
+        Castro","firstName":"Ana","lastName":"Castro","nickname":"","gender":"Female","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 318-17-77","workEmail":"ana.castro@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"n\/a","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40472-1-1.jpg","canUploadPhoto":0},{"id":"40558","displayName":"Gustavo
+        Colorado","firstName":"Gustavo","lastName":"Colorado","nickname":null,"gender":"Male","jobTitle":"Trainee","workPhone":null,"mobilePhone":"313-136-5071","workEmail":"gustavo.colorado@crowdint.com","department":"Design","location":"Colima","division":"Design","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40558-1-1.jpg","canUploadPhoto":0},{"id":"40429","displayName":"Esteban
+        Cort\u00e9s","firstName":"Esteban","lastName":"Cort\u00e9s","nickname":"Stbn","gender":"Male","jobTitle":"Customer
+        Experience","workPhone":"(312) 323-71-75","mobilePhone":"(415) 9905490","workEmail":"esteban.cortes@crowdint.com","department":"Business
+        Development","location":"Colima","division":"Director","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40429-1-1.jpg","canUploadPhoto":0},{"id":"40435","displayName":"Edwin
+        Cruz","firstName":"Edwin","lastName":"Cruz","nickname":"Edwings","gender":"Male","jobTitle":"VP
+        Engineering","workPhone":"(312) 323-71-75","mobilePhone":"(312) 107-2187","workEmail":"edwin.cruz@crowdint.com","department":"Management","location":"Colima","division":"Director","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40435-1-1.jpg","canUploadPhoto":0},{"id":"40539","displayName":"David
+        Cuadra","firstName":"David","lastName":"Cuadra","nickname":"ChewyCQ","gender":"Male","jobTitle":"Intern","workPhone":null,"mobilePhone":"0443121443302","workEmail":"david.cuadra@crowdint.com","department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40539-1-1.jpg","canUploadPhoto":0},{"id":"40442","displayName":"J
+        Emmanuel Delgado","firstName":"J Emmanuel","lastName":"Delgado","nickname":"Larin","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 594-0269","workEmail":"emmanuel.delgado@crowdint.com","department":"Development","location":"Colima","division":"Team
+        Leads","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40442-1-1.jpg","canUploadPhoto":0},{"id":"40523","displayName":"Alejandro
+        Espinoza","firstName":"Alejandro","lastName":"Espinoza","nickname":"alexesba","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3129431763","workEmail":"alejandro.espinoza@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40523-1-1.jpg","canUploadPhoto":0},{"id":"40474","displayName":"Eduardo
+        Figarola","firstName":"Eduardo","lastName":"Figarola","nickname":"Lalo","gender":"Male","jobTitle":"Developer","workPhone":"","mobilePhone":"2292345881","workEmail":"eduardo.figarola@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40474-1-1.jpg","canUploadPhoto":0},{"id":"40413","displayName":"Sergio
+        Figueroa","firstName":"Sergio","lastName":"Figueroa","nickname":"Fanta","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 137-4418","workEmail":"sergio.figueroa@crowdint.com","department":"Development","location":"Colima","division":null,"workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40413-1-1.jpg","canUploadPhoto":0},{"id":"40487","displayName":"Jes\u00fas
+        Figueroa","firstName":"Jes\u00fas","lastName":"Figueroa","nickname":null,"gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3121160252","workEmail":"jesus.figueroa@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40487-1-1.jpg","canUploadPhoto":0},{"id":"40526","displayName":"Jos\u00e9
+        Flores","firstName":"Jos\u00e9","lastName":"Flores","nickname":"Cisco","gender":"Male","jobTitle":"Junior","workPhone":null,"mobilePhone":"312-134-5619","workEmail":"francisco.flores@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40526-2-1.jpg","canUploadPhoto":0},{"id":"40452","displayName":"Jos\u00e9
+        Galindo","firstName":"Jos\u00e9","lastName":"Galindo","nickname":"joiggama","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 3012153","workEmail":"ignacio.galindo@crowdint.com","department":"Development","location":"Colima","division":null,"workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40452-1-1.jpg","canUploadPhoto":0},{"id":"40460","displayName":"Nelida
+        Galindo","firstName":"Nelida","lastName":"Galindo","nickname":"Nely","gender":"Female","jobTitle":"Accounting","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 550-4084","workEmail":"nelida.galindo@crowdint.com","department":"Finance","location":"Colima","division":"Manager","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40460-1-1.jpg","canUploadPhoto":0},{"id":"40559","displayName":"Eduardo
+        Garcia","firstName":"Eduardo","lastName":"Garcia","nickname":null,"gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"777-345-9164","workEmail":"eduardo.garcia@crowdint.com","department":"Development","location":"Colima","division":"Mid-Senior","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40559-1-1.jpg","canUploadPhoto":0},{"id":"40550","displayName":"Juan
+        Garc\u00eda","firstName":"Juan","lastName":"Garc\u00eda","nickname":null,"gender":"Male","jobTitle":"Intern","workPhone":null,"mobilePhone":"312-135-8146","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40550-1-1.jpg","canUploadPhoto":0},{"id":"40514","displayName":"Manuel
+        Garc\u00eda","firstName":"Manuel","lastName":"Garc\u00eda","nickname":"Many","gender":"Male","jobTitle":"Admin
+        Analyst","workPhone":null,"mobilePhone":"3125931549","workEmail":"manuel.garcia@crowdint.com","department":"Finance","location":"Colima","division":"Assistant","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40514-1-1.jpg","canUploadPhoto":0},{"id":"40520","displayName":"Gabriel
+        Gonz\u00e1lez","firstName":"Gabriel","lastName":"Gonz\u00e1lez","nickname":"Gabe","gender":"Male","jobTitle":"VP
+        Operations","workPhone":null,"mobilePhone":"3121036495","workEmail":"gabriel.gonzalez@crowdint.com","department":"Management","location":"Colima","division":"Director","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40520-2-1.jpg","canUploadPhoto":0},{"id":"40552","displayName":"Sandra
+        Gonz\u00e1lez","firstName":"Sandra","lastName":"Gonz\u00e1lez","nickname":null,"gender":"Female","jobTitle":"Assistant","workPhone":null,"mobilePhone":"312-319-6495","workEmail":"sandra.gonzalez@crowdint.com","department":"Administrative
+        Staff","location":"Colima","division":null,"workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40552-1-1.jpg","canUploadPhoto":0},{"id":"40525","displayName":"Carlos
+        Guti\u00e9rrez","firstName":"Carlos","lastName":"Guti\u00e9rrez","nickname":"Cone","gender":"Male","jobTitle":"Developer
+        Jr.","workPhone":null,"mobilePhone":"3125935148","workEmail":"carlos.gutierrez@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40525-1-1.jpg","canUploadPhoto":0},{"id":"40495","displayName":"Katia
+        Guti\u00e9rrez","firstName":"Katia","lastName":"Guti\u00e9rrez","nickname":"Katy","gender":"Female","jobTitle":"Designer","workPhone":null,"mobilePhone":"312
+        135 60 44","workEmail":"katia@crowdint.com","department":"Design","location":"Colima","division":"Mid-Senior","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40495-1-1.jpg","canUploadPhoto":0},{"id":"40458","displayName":"Juan
+        Guzm\u00e1n","firstName":"Juan","lastName":"Guzm\u00e1n","nickname":"JP","gender":"Male","jobTitle":"Social
+        Media","workPhone":"(312) 323-71-75","mobilePhone":"(312)1323537","workEmail":"pablo.guzman@crowdint.com","department":"Sales
+        & Marketing","location":"Colima","division":"Marketing","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40458-1-1.jpg","canUploadPhoto":0},{"id":"40524","displayName":"Armando
+        Guzm\u00e1n","firstName":"Armando","lastName":"Guzm\u00e1n","nickname":"Zorro","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"4432701719","workEmail":"armando.guzman@crowdint.com","department":"Development","location":"Remote","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40524-2-1.jpg","canUploadPhoto":0},{"id":"40433","displayName":"J.
+        Jes\u00fas Haro","firstName":"J. Jes\u00fas","lastName":"Haro","nickname":"Haro","gender":"Male","jobTitle":"Designer","workPhone":"(312)
+        323-71-75","mobilePhone":"312-124-8323","workEmail":"jesus.haro@crowdint.com","department":"Design","location":"Colima","division":"Senior","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40433-2-1.jpg","canUploadPhoto":0},{"id":"40544","displayName":"Cristian
+        Jer\u00f3nimo","firstName":"Cristian","lastName":"Jer\u00f3nimo","nickname":"DarkAbsolutE","gender":"Male","jobTitle":"Intern","workPhone":"3237175","mobilePhone":"314-118-6339","workEmail":"jeronimo.cazares@crowdint.com","department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40544-1-1.jpg","canUploadPhoto":0},{"id":"40549","displayName":"Armeen
+        Khazaneh-Darlou","firstName":"Armeen","lastName":"Khazaneh-Darlou","nickname":null,"gender":"Male","jobTitle":"Scrum
+        Master","workPhone":null,"mobilePhone":"1-408-679-0198","workEmail":"armeen.darlou@crowdint.com","department":"Product","location":"San
+        Francisco","division":"Manager","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40549-1-1.jpg","canUploadPhoto":0},{"id":"40530","displayName":"Jordan
+        L\u00f3pez","firstName":"Jordan","lastName":"L\u00f3pez","nickname":null,"gender":"Male","jobTitle":"Designer","workPhone":null,"mobilePhone":"312
+        318 8030","workEmail":"jordan.lopez@crowdint.com","department":"Design","location":"Colima","division":"Junior","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40530-2-1.jpg","canUploadPhoto":0},{"id":"40551","displayName":"Aldo
+        Marquez Padilla","firstName":"Aldo","lastName":"Marquez Padilla","nickname":null,"gender":"Male","jobTitle":"Intern","workPhone":null,"mobilePhone":"312-141-4298","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40551-1-1.jpg","canUploadPhoto":0},{"id":"40430","displayName":"Olga
+        Mart\u00ednez","firstName":"Olga","lastName":"Mart\u00ednez","nickname":"Lety","gender":"Female","jobTitle":"Janitor","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 106-83-70","workEmail":"amado@crowdint.com","department":"Operations","location":"Colima","division":"Maintenance","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40430-1-1.jpg","canUploadPhoto":0},{"id":"40470","displayName":"Erika
+        Mej\u00eda","firstName":"Erika","lastName":"Mej\u00eda","nickname":"Eri","gender":"Female","jobTitle":"Scrum
+        Master","workPhone":"323-71-75","mobilePhone":"(341) 115-90-38","workEmail":"erika.mejia@crowdint.com","department":"Project
+        Management","location":"Colima","division":"Junior","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40470-1-1.jpg","canUploadPhoto":0},{"id":"40557","displayName":"Anyelina
+        Moreno","firstName":"Anyelina","lastName":"Moreno","nickname":"Anye","gender":"Female","jobTitle":"Intern","workPhone":null,"mobilePhone":"312-120-0018","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40557-1-1.jpg","canUploadPhoto":0},{"id":"40459","displayName":"Herman
+        Moreno","firstName":"Herman","lastName":"Moreno","nickname":"","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312)130-6086","workEmail":"herman.moreno@crowdint.com","department":"Development","location":"Colima","division":null,"workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40459-2-1.jpg","canUploadPhoto":0},{"id":"40447","displayName":"Carlos
+        Muniz","firstName":"Carlos","lastName":"Muniz","nickname":"Mumo","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 102-0899","workEmail":"carlos.muniz@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40447-1-1.jpg","canUploadPhoto":0},{"id":"40555","displayName":"Sandra
+        Mu\u00f1oz","firstName":"Sandra","lastName":"Mu\u00f1oz","nickname":"Sandy","gender":"Female","jobTitle":"Intern","workPhone":null,"mobilePhone":"314-142-0708","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40555-3-1.jpg","canUploadPhoto":0},{"id":"40521","displayName":"Fernanda
+        Ochoa","firstName":"Fernanda","lastName":"Ochoa","nickname":"Fer","gender":"Female","jobTitle":"English
+        Advisor","workPhone":null,"mobilePhone":"312-156-0866","workEmail":"fernanda.ochoa@crowdint.com","department":"Product","location":"Colima","division":"Content
+        and English Advisor","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40521-1-1.jpg","canUploadPhoto":0},{"id":"40513","displayName":"Mariana
+        Ochoa","firstName":"Mariana","lastName":"Ochoa","nickname":null,"gender":"Female","jobTitle":"Junior","workPhone":null,"mobilePhone":"3121142651","workEmail":"mariana.ochoa@crowdint.com","department":"QA","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40513-1-1.jpg","canUploadPhoto":0},{"id":"40504","displayName":"Viviana
+        Palacios","firstName":"Viviana","lastName":"Palacios","nickname":"Vivis","gender":"Female","jobTitle":"Scrum
+        Master","workPhone":null,"mobilePhone":"9992081014","workEmail":"viviana.palacios@crowdint.com","department":"Project
+        Management","location":"Colima","division":"Mid-Senior","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40504-1-1.jpg","canUploadPhoto":0},{"id":"40417","displayName":"Jorge
+        Pardinas","firstName":"Jorge","lastName":"Pardinas","nickname":"Pardi\u00f1as","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 138-5300","workEmail":"jorge.parbros@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40417-1-1.jpg","canUploadPhoto":0},{"id":"40483","displayName":"Oscar
+        Perales","firstName":"Oscar","lastName":"Perales","nickname":null,"gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3310885718","workEmail":"fernando.perales@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40483-1-1.jpg","canUploadPhoto":0},{"id":"40527","displayName":"Ang\u00e9lica
+        P\u00e9rez","firstName":"Ang\u00e9lica","lastName":"P\u00e9rez","nickname":null,"gender":"Female","jobTitle":"Designer","workPhone":null,"mobilePhone":"3129434454","workEmail":"angelica.perez@crowdint.com","department":"Design","location":"Colima","division":"Junior","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40527-2-1.jpg","canUploadPhoto":0},{"id":"40466","displayName":"Edmundo
+        P\u00e9rez","firstName":"Edmundo","lastName":"P\u00e9rez","nickname":"Ingedmundo","gender":"Male","jobTitle":"Developer","workPhone":"","mobilePhone":"(312)
+        3012336","workEmail":"edmundo.perez@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40466-2-1.jpg","canUploadPhoto":0},{"id":"40468","displayName":"Jos\u00e9
+        P\u00e9rez","firstName":"Jos\u00e9","lastName":"P\u00e9rez","nickname":"","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        32371-75","mobilePhone":"(312)12315-17","workEmail":"heriberto.perez@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40468-1-1.jpg","canUploadPhoto":0},{"id":"40492","displayName":"Ma.
+        Elena P\u00e9rez","firstName":"Ma. Elena","lastName":"P\u00e9rez","nickname":"Mary","gender":"Female","jobTitle":"Manager","workPhone":null,"mobilePhone":"312-120-6546","workEmail":"mary.perez@crowdint.com","department":"Operations","location":"Colima","division":"Manager","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40492-2-1.jpg","canUploadPhoto":0},{"id":"40497","displayName":"Juan
+        Ramos","firstName":"Juan","lastName":"Ramos","nickname":"Rafa","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"312
+        554 4723","workEmail":"rafael.ramos@crowdint.com","department":"Development","location":"Colima","division":"Team
+        Leads","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40497-1-1.jpg","canUploadPhoto":0},{"id":"40535","displayName":"Ricardo
+        Rivas","firstName":"Ricardo","lastName":"Rivas","nickname":"Richistron","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"333-956-7527","workEmail":"ricardo.rivas@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40535-2-1.jpg","canUploadPhoto":0},{"id":"40462","displayName":"Gustavo
+        Robles","firstName":"Gustavo","lastName":"Robles","nickname":"Gusano","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 107-3046","workEmail":"gustavo.robles@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40462-1-1.jpg","canUploadPhoto":0},{"id":"40427","displayName":"Carlos
+        Rocha","firstName":"Carlos","lastName":"Rocha","nickname":"","gender":"Male","jobTitle":"CEO","workPhone":"(312)
+        323-71-75","mobilePhone":"3121123204","workEmail":"carlos.rocha@crowdint.com","department":"Administrative
+        Staff","location":"Colima","division":"C Level \/ Director","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40427-1-1.jpg","canUploadPhoto":0},{"id":"40519","displayName":"Claudia
+        Rueda","firstName":"Claudia","lastName":"Rueda","nickname":null,"gender":"Female","jobTitle":"Assistant","workPhone":null,"mobilePhone":"5545331836","workEmail":"claudia.rueda@crowdint.com","department":"Administrative
+        Staff","location":"Colima","division":"Assistant","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40519-1-1.jpg","canUploadPhoto":0},{"id":"40547","displayName":"Katherine
+        Sipos","firstName":"Katherine","lastName":"Sipos","nickname":"Katie","gender":"Female","jobTitle":"Product
+        Manager","workPhone":null,"mobilePhone":"7246016103","workEmail":"katie.sipos@crowdint.com","department":"Project
+        Management","location":"San Francisco","division":null,"workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40547-1-1.jpg","canUploadPhoto":0},{"id":"40489","displayName":"Isay
+        Sosa","firstName":"Isay","lastName":"Sosa","nickname":"iszandro","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"312-125-7412","workEmail":"isay.sosa@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40489-1-1.jpg","canUploadPhoto":0},{"id":"40455","displayName":"Eduardo
+        Tapia","firstName":"Eduardo","lastName":"Tapia","nickname":"Tapitas","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 119-1336","workEmail":"jonathan.tapia@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40455-1-1.jpg","canUploadPhoto":0},{"id":"40457","displayName":"V\u00edctor
+        Vel\u00e1zquez","firstName":"V\u00edctor","lastName":"Vel\u00e1zquez","nickname":"","gender":"Male","jobTitle":"Community
+        Liaison","workPhone":"(312) 323-71-75","mobilePhone":"(312) 112-7812","workEmail":"victor.velazquez@crowdint.com","department":"People
+        and Culture","location":"Colima","division":"Mid-Senior","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40457-1-1.jpg","canUploadPhoto":0},{"id":"40554","displayName":"Ana
+        Ventura","firstName":"Ana","lastName":"Ventura","nickname":null,"gender":"Female","jobTitle":"Intern","workPhone":null,"mobilePhone":"312-304-7725","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40554-1-1.jpg","canUploadPhoto":0},{"id":"40485","displayName":"Jaime
+        Victoria","firstName":"Jaime","lastName":"Victoria","nickname":null,"gender":"Male","jobTitle":"Contractor","workPhone":null,"mobilePhone":"312-315-1540","workEmail":"jaime.victoria@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40485-1-1.jpg","canUploadPhoto":0},{"id":"40546","displayName":"Manuel
+        Vidaurre","firstName":"Manuel","lastName":"Vidaurre","nickname":null,"gender":"Male","jobTitle":"VP
+        Product","workPhone":null,"mobilePhone":"3339552045","workEmail":"manuel.vidaurre@crowdint.com","department":"Product","location":"Colima","division":"Director","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40546-1-1.jpg","canUploadPhoto":0},{"id":"40490","displayName":"Jos\u00e9
+        Villa","firstName":"Jos\u00e9","lastName":"Villa","nickname":null,"gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3411038838","workEmail":"gilberto.villa@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40490-1-1.jpg","canUploadPhoto":0},{"id":"40522","displayName":"Adil
+        Wali","firstName":"Adil","lastName":"Wali","nickname":null,"gender":"Male","jobTitle":"Founder","workPhone":null,"mobilePhone":null,"workEmail":"adil@crowdint.com","department":null,"location":null,"division":null,"workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40522-1-1.jpg","canUploadPhoto":0},{"id":"40532","displayName":"Jenna
+        Winn","firstName":"Jenna","lastName":"Winn","nickname":null,"gender":"Female","jobTitle":null,"workPhone":null,"mobilePhone":"4129960790","workEmail":"jenna.winn@crowdint.com","department":"Administrative
+        Staff","location":"San Francisco","division":"Manager","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40532-1-1.jpg","canUploadPhoto":0}]}'
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 22:20:50 GMT
+- request:
+    method: get
+    uri: https://API_TOKEN:x@api.bamboohr.com/api/gateway.php/crowdint/v1/employees/directory
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 10 Aug 2015 22:21:41 GMT
+      Server:
+      - Apache
+      X-Bamboohr-Error-Messsage:
+      - API key not provided or invalid
+      Www-Authenticate:
+      - Basic realm="https://apibamboohr.com/crowdint"
+      Vary:
+      - User-Agent
+      Content-Length:
+      - '0'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 22:21:42 GMT
+- request:
+    method: get
+    uri: https://API_TOKEN:x@api.bamboohr.com/api/gateway.php/crowdint/v1/employees/directory
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 10 Aug 2015 22:26:11 GMT
+      Server:
+      - Apache
+      X-Bamboohr-Error-Messsage:
+      - API key not provided or invalid
+      Www-Authenticate:
+      - Basic realm="https://apibamboohr.com/crowdint"
+      Vary:
+      - User-Agent
+      Content-Length:
+      - '0'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 22:26:12 GMT
+- request:
+    method: get
+    uri: https://API_TOKEN:x@api.bamboohr.com/api/gateway.php/crowdint/v1/employees/directory
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 10 Aug 2015 22:27:33 GMT
+      Server:
+      - Apache
+      X-Bamboohr-Error-Messsage:
+      - API key not provided or invalid
+      Www-Authenticate:
+      - Basic realm="https://apibamboohr.com/crowdint"
+      Vary:
+      - User-Agent
+      Content-Length:
+      - '0'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 22:27:35 GMT
+- request:
+    method: get
+    uri: https://d15c4730fb88ad3d031cb2a60cd9b2c841589889:x@api.bamboohr.com/api/gateway.php/crowdint/v1/employees/directory
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Aug 2015 22:30:03 GMT
+      Server:
+      - Apache
+      Vary:
+      - User-Agent
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"fields":[{"id":"displayName","type":"text","name":"Display name"},{"id":"firstName","type":"text","name":"First
+        name"},{"id":"lastName","type":"text","name":"Last name"},{"id":"nickname","type":"text","name":"Nick
+        name"},{"id":"gender","type":"gender","name":"Gender"},{"id":"jobTitle","type":"list","name":"Job
+        title"},{"id":"workPhone","type":"text","name":"Work Phone"},{"id":"mobilePhone","type":"text","name":"Mobile
+        Phone"},{"id":"workEmail","type":"email","name":"Work Email"},{"id":"department","type":"list","name":"Department"},{"id":"location","type":"list","name":"Location"},{"id":"division","type":"list","name":"Division"},{"id":"workPhoneExtension","type":"text","name":"Work
+        Ext."},{"id":"photoUploaded","type":"bool","name":"Employee photo exists"},{"id":"photoUrl","type":"url","name":"Employee
+        photo url"},{"type":"bool","name":"","id":"canUploadPhoto"}],"employees":[{"id":"40541","displayName":"Ernesto
+        Alcaraz","firstName":"Ernesto","lastName":"Alcaraz","nickname":"Neto","gender":"Male","jobTitle":"Trainee","workPhone":null,"mobilePhone":"312-107-27-67","workEmail":"ernesto.alcaraz@crowdint.com","department":"Development","location":"Colima","division":"Trainee","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40541-1-1.jpg","canUploadPhoto":0},{"id":"40451","displayName":"Nora
+        Alvarado","firstName":"Nora","lastName":"Alvarado","nickname":"","gender":"Female","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"3121073486","workEmail":"nora.alvarado@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40451-1-1.jpg","canUploadPhoto":0},{"id":"40414","displayName":"Carlos
+        Araoz","firstName":"Carlos","lastName":"Araoz","nickname":"Cayitos","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 142-1548","workEmail":"carlos.grageda@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40414-1-1.jpg","canUploadPhoto":0},{"id":"40505","displayName":"Fernando
+        Barajas","firstName":"Fernando","lastName":"Barajas","nickname":"Fer","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3121266037","workEmail":"fernando.barajas@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40505-1-1.jpg","canUploadPhoto":0},{"id":"40456","displayName":"Ulices
+        Barajas","firstName":"Ulices","lastName":"Barajas","nickname":"","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 123-8968","workEmail":"ulices.barajas@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40456-1-1.jpg","canUploadPhoto":0},{"id":"40553","displayName":"Jos\u00e9
+        Alberto Barranco","firstName":"Jos\u00e9 Alberto","lastName":"Barranco","nickname":"Paque","gender":"Male","jobTitle":"Magento
+        Developer","workPhone":null,"mobilePhone":"4432213240","workEmail":null,"department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40553-2-1.jpg","canUploadPhoto":0},{"id":"40545","displayName":"Guillermo
+        Barreto","firstName":"Guillermo","lastName":"Barreto","nickname":null,"gender":"Male","jobTitle":"Janitor","workPhone":null,"mobilePhone":"312-339-7494","workEmail":null,"department":"Operations","location":"Colima","division":null,"workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40545-1-1.jpg","canUploadPhoto":0},{"id":"40443","displayName":"Hector
+        Bustillos","firstName":"Hector","lastName":"Bustillos","nickname":"Rojo","gender":"Male","jobTitle":"Product
+        Owner","workPhone":"(312) 323-71-75","mobilePhone":"(312) 1233934","workEmail":"hector.bustillos@crowdint.com","department":"Project
+        Management","location":"Colima","division":"Senior","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40443-1-1.jpg","canUploadPhoto":0},{"id":"40556","displayName":"Estefania
+        Cano","firstName":"Estefania","lastName":"Cano","nickname":"Fany","gender":"Male","jobTitle":"Intern","workPhone":null,"mobilePhone":"312-301-2815","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40556-2-1.jpg","canUploadPhoto":0},{"id":"40494","displayName":"Rogelio
+        Castillo","firstName":"Rogelio","lastName":"Castillo","nickname":null,"gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3123188661","workEmail":"adrian.castillo@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40494-1-1.jpg","canUploadPhoto":0},{"id":"40472","displayName":"Ana
+        Castro","firstName":"Ana","lastName":"Castro","nickname":"","gender":"Female","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 318-17-77","workEmail":"ana.castro@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"n\/a","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40472-1-1.jpg","canUploadPhoto":0},{"id":"40558","displayName":"Gustavo
+        Colorado","firstName":"Gustavo","lastName":"Colorado","nickname":null,"gender":"Male","jobTitle":"Trainee","workPhone":null,"mobilePhone":"313-136-5071","workEmail":"gustavo.colorado@crowdint.com","department":"Design","location":"Colima","division":"Design","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40558-1-1.jpg","canUploadPhoto":0},{"id":"40429","displayName":"Esteban
+        Cort\u00e9s","firstName":"Esteban","lastName":"Cort\u00e9s","nickname":"Stbn","gender":"Male","jobTitle":"Customer
+        Experience","workPhone":"(312) 323-71-75","mobilePhone":"(415) 9905490","workEmail":"esteban.cortes@crowdint.com","department":"Business
+        Development","location":"Colima","division":"Director","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40429-1-1.jpg","canUploadPhoto":0},{"id":"40435","displayName":"Edwin
+        Cruz","firstName":"Edwin","lastName":"Cruz","nickname":"Edwings","gender":"Male","jobTitle":"VP
+        Engineering","workPhone":"(312) 323-71-75","mobilePhone":"(312) 107-2187","workEmail":"edwin.cruz@crowdint.com","department":"Management","location":"Colima","division":"Director","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40435-1-1.jpg","canUploadPhoto":0},{"id":"40539","displayName":"David
+        Cuadra","firstName":"David","lastName":"Cuadra","nickname":"ChewyCQ","gender":"Male","jobTitle":"Intern","workPhone":null,"mobilePhone":"0443121443302","workEmail":"david.cuadra@crowdint.com","department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40539-1-1.jpg","canUploadPhoto":0},{"id":"40442","displayName":"J
+        Emmanuel Delgado","firstName":"J Emmanuel","lastName":"Delgado","nickname":"Larin","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 594-0269","workEmail":"emmanuel.delgado@crowdint.com","department":"Development","location":"Colima","division":"Team
+        Leads","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40442-1-1.jpg","canUploadPhoto":0},{"id":"40523","displayName":"Alejandro
+        Espinoza","firstName":"Alejandro","lastName":"Espinoza","nickname":"alexesba","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3129431763","workEmail":"alejandro.espinoza@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40523-1-1.jpg","canUploadPhoto":0},{"id":"40474","displayName":"Eduardo
+        Figarola","firstName":"Eduardo","lastName":"Figarola","nickname":"Lalo","gender":"Male","jobTitle":"Developer","workPhone":"","mobilePhone":"2292345881","workEmail":"eduardo.figarola@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40474-1-1.jpg","canUploadPhoto":0},{"id":"40413","displayName":"Sergio
+        Figueroa","firstName":"Sergio","lastName":"Figueroa","nickname":"Fanta","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 137-4418","workEmail":"sergio.figueroa@crowdint.com","department":"Development","location":"Colima","division":null,"workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40413-1-1.jpg","canUploadPhoto":0},{"id":"40487","displayName":"Jes\u00fas
+        Figueroa","firstName":"Jes\u00fas","lastName":"Figueroa","nickname":null,"gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3121160252","workEmail":"jesus.figueroa@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40487-1-1.jpg","canUploadPhoto":0},{"id":"40526","displayName":"Jos\u00e9
+        Flores","firstName":"Jos\u00e9","lastName":"Flores","nickname":"Cisco","gender":"Male","jobTitle":"Junior","workPhone":null,"mobilePhone":"312-134-5619","workEmail":"francisco.flores@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40526-2-1.jpg","canUploadPhoto":0},{"id":"40452","displayName":"Jos\u00e9
+        Galindo","firstName":"Jos\u00e9","lastName":"Galindo","nickname":"joiggama","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 3012153","workEmail":"ignacio.galindo@crowdint.com","department":"Development","location":"Colima","division":null,"workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40452-1-1.jpg","canUploadPhoto":0},{"id":"40460","displayName":"Nelida
+        Galindo","firstName":"Nelida","lastName":"Galindo","nickname":"Nely","gender":"Female","jobTitle":"Accounting","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 550-4084","workEmail":"nelida.galindo@crowdint.com","department":"Finance","location":"Colima","division":"Manager","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40460-1-1.jpg","canUploadPhoto":0},{"id":"40559","displayName":"Eduardo
+        Garcia","firstName":"Eduardo","lastName":"Garcia","nickname":null,"gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"777-345-9164","workEmail":"eduardo.garcia@crowdint.com","department":"Development","location":"Colima","division":"Mid-Senior","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40559-1-1.jpg","canUploadPhoto":0},{"id":"40550","displayName":"Juan
+        Garc\u00eda","firstName":"Juan","lastName":"Garc\u00eda","nickname":null,"gender":"Male","jobTitle":"Intern","workPhone":null,"mobilePhone":"312-135-8146","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40550-1-1.jpg","canUploadPhoto":0},{"id":"40514","displayName":"Manuel
+        Garc\u00eda","firstName":"Manuel","lastName":"Garc\u00eda","nickname":"Many","gender":"Male","jobTitle":"Admin
+        Analyst","workPhone":null,"mobilePhone":"3125931549","workEmail":"manuel.garcia@crowdint.com","department":"Finance","location":"Colima","division":"Assistant","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40514-1-1.jpg","canUploadPhoto":0},{"id":"40520","displayName":"Gabriel
+        Gonz\u00e1lez","firstName":"Gabriel","lastName":"Gonz\u00e1lez","nickname":"Gabe","gender":"Male","jobTitle":"VP
+        Operations","workPhone":null,"mobilePhone":"3121036495","workEmail":"gabriel.gonzalez@crowdint.com","department":"Management","location":"Colima","division":"Director","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40520-2-1.jpg","canUploadPhoto":0},{"id":"40552","displayName":"Sandra
+        Gonz\u00e1lez","firstName":"Sandra","lastName":"Gonz\u00e1lez","nickname":null,"gender":"Female","jobTitle":"Assistant","workPhone":null,"mobilePhone":"312-319-6495","workEmail":"sandra.gonzalez@crowdint.com","department":"Administrative
+        Staff","location":"Colima","division":null,"workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40552-1-1.jpg","canUploadPhoto":0},{"id":"40525","displayName":"Carlos
+        Guti\u00e9rrez","firstName":"Carlos","lastName":"Guti\u00e9rrez","nickname":"Cone","gender":"Male","jobTitle":"Developer
+        Jr.","workPhone":null,"mobilePhone":"3125935148","workEmail":"carlos.gutierrez@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40525-1-1.jpg","canUploadPhoto":0},{"id":"40495","displayName":"Katia
+        Guti\u00e9rrez","firstName":"Katia","lastName":"Guti\u00e9rrez","nickname":"Katy","gender":"Female","jobTitle":"Designer","workPhone":null,"mobilePhone":"312
+        135 60 44","workEmail":"katia@crowdint.com","department":"Design","location":"Colima","division":"Mid-Senior","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40495-1-1.jpg","canUploadPhoto":0},{"id":"40458","displayName":"Juan
+        Guzm\u00e1n","firstName":"Juan","lastName":"Guzm\u00e1n","nickname":"JP","gender":"Male","jobTitle":"Social
+        Media","workPhone":"(312) 323-71-75","mobilePhone":"(312)1323537","workEmail":"pablo.guzman@crowdint.com","department":"Sales
+        & Marketing","location":"Colima","division":"Marketing","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40458-1-1.jpg","canUploadPhoto":0},{"id":"40524","displayName":"Armando
+        Guzm\u00e1n","firstName":"Armando","lastName":"Guzm\u00e1n","nickname":"Zorro","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"4432701719","workEmail":"armando.guzman@crowdint.com","department":"Development","location":"Remote","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40524-2-1.jpg","canUploadPhoto":0},{"id":"40433","displayName":"J.
+        Jes\u00fas Haro","firstName":"J. Jes\u00fas","lastName":"Haro","nickname":"Haro","gender":"Male","jobTitle":"Designer","workPhone":"(312)
+        323-71-75","mobilePhone":"312-124-8323","workEmail":"jesus.haro@crowdint.com","department":"Design","location":"Colima","division":"Senior","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40433-2-1.jpg","canUploadPhoto":0},{"id":"40544","displayName":"Cristian
+        Jer\u00f3nimo","firstName":"Cristian","lastName":"Jer\u00f3nimo","nickname":"DarkAbsolutE","gender":"Male","jobTitle":"Intern","workPhone":"3237175","mobilePhone":"314-118-6339","workEmail":"jeronimo.cazares@crowdint.com","department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40544-1-1.jpg","canUploadPhoto":0},{"id":"40549","displayName":"Armeen
+        Khazaneh-Darlou","firstName":"Armeen","lastName":"Khazaneh-Darlou","nickname":null,"gender":"Male","jobTitle":"Scrum
+        Master","workPhone":null,"mobilePhone":"1-408-679-0198","workEmail":"armeen.darlou@crowdint.com","department":"Product","location":"San
+        Francisco","division":"Manager","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40549-1-1.jpg","canUploadPhoto":0},{"id":"40530","displayName":"Jordan
+        L\u00f3pez","firstName":"Jordan","lastName":"L\u00f3pez","nickname":null,"gender":"Male","jobTitle":"Designer","workPhone":null,"mobilePhone":"312
+        318 8030","workEmail":"jordan.lopez@crowdint.com","department":"Design","location":"Colima","division":"Junior","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40530-2-1.jpg","canUploadPhoto":0},{"id":"40551","displayName":"Aldo
+        Marquez Padilla","firstName":"Aldo","lastName":"Marquez Padilla","nickname":null,"gender":"Male","jobTitle":"Intern","workPhone":null,"mobilePhone":"312-141-4298","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40551-1-1.jpg","canUploadPhoto":0},{"id":"40430","displayName":"Olga
+        Mart\u00ednez","firstName":"Olga","lastName":"Mart\u00ednez","nickname":"Lety","gender":"Female","jobTitle":"Janitor","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 106-83-70","workEmail":"amado@crowdint.com","department":"Operations","location":"Colima","division":"Maintenance","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40430-1-1.jpg","canUploadPhoto":0},{"id":"40470","displayName":"Erika
+        Mej\u00eda","firstName":"Erika","lastName":"Mej\u00eda","nickname":"Eri","gender":"Female","jobTitle":"Scrum
+        Master","workPhone":"323-71-75","mobilePhone":"(341) 115-90-38","workEmail":"erika.mejia@crowdint.com","department":"Project
+        Management","location":"Colima","division":"Junior","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40470-1-1.jpg","canUploadPhoto":0},{"id":"40557","displayName":"Anyelina
+        Moreno","firstName":"Anyelina","lastName":"Moreno","nickname":"Anye","gender":"Female","jobTitle":"Intern","workPhone":null,"mobilePhone":"312-120-0018","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40557-1-1.jpg","canUploadPhoto":0},{"id":"40459","displayName":"Herman
+        Moreno","firstName":"Herman","lastName":"Moreno","nickname":"","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312)130-6086","workEmail":"herman.moreno@crowdint.com","department":"Development","location":"Colima","division":null,"workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40459-2-1.jpg","canUploadPhoto":0},{"id":"40447","displayName":"Carlos
+        Muniz","firstName":"Carlos","lastName":"Muniz","nickname":"Mumo","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 102-0899","workEmail":"carlos.muniz@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40447-1-1.jpg","canUploadPhoto":0},{"id":"40555","displayName":"Sandra
+        Mu\u00f1oz","firstName":"Sandra","lastName":"Mu\u00f1oz","nickname":"Sandy","gender":"Female","jobTitle":"Intern","workPhone":null,"mobilePhone":"314-142-0708","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40555-3-1.jpg","canUploadPhoto":0},{"id":"40521","displayName":"Fernanda
+        Ochoa","firstName":"Fernanda","lastName":"Ochoa","nickname":"Fer","gender":"Female","jobTitle":"English
+        Advisor","workPhone":null,"mobilePhone":"312-156-0866","workEmail":"fernanda.ochoa@crowdint.com","department":"Product","location":"Colima","division":"Content
+        and English Advisor","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40521-1-1.jpg","canUploadPhoto":0},{"id":"40513","displayName":"Mariana
+        Ochoa","firstName":"Mariana","lastName":"Ochoa","nickname":null,"gender":"Female","jobTitle":"Junior","workPhone":null,"mobilePhone":"3121142651","workEmail":"mariana.ochoa@crowdint.com","department":"QA","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40513-1-1.jpg","canUploadPhoto":0},{"id":"40504","displayName":"Viviana
+        Palacios","firstName":"Viviana","lastName":"Palacios","nickname":"Vivis","gender":"Female","jobTitle":"Scrum
+        Master","workPhone":null,"mobilePhone":"9992081014","workEmail":"viviana.palacios@crowdint.com","department":"Project
+        Management","location":"Colima","division":"Mid-Senior","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40504-1-1.jpg","canUploadPhoto":0},{"id":"40417","displayName":"Jorge
+        Pardinas","firstName":"Jorge","lastName":"Pardinas","nickname":"Pardi\u00f1as","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 138-5300","workEmail":"jorge.parbros@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40417-1-1.jpg","canUploadPhoto":0},{"id":"40483","displayName":"Oscar
+        Perales","firstName":"Oscar","lastName":"Perales","nickname":null,"gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3310885718","workEmail":"fernando.perales@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40483-1-1.jpg","canUploadPhoto":0},{"id":"40527","displayName":"Ang\u00e9lica
+        P\u00e9rez","firstName":"Ang\u00e9lica","lastName":"P\u00e9rez","nickname":null,"gender":"Female","jobTitle":"Designer","workPhone":null,"mobilePhone":"3129434454","workEmail":"angelica.perez@crowdint.com","department":"Design","location":"Colima","division":"Junior","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40527-2-1.jpg","canUploadPhoto":0},{"id":"40466","displayName":"Edmundo
+        P\u00e9rez","firstName":"Edmundo","lastName":"P\u00e9rez","nickname":"Ingedmundo","gender":"Male","jobTitle":"Developer","workPhone":"","mobilePhone":"(312)
+        3012336","workEmail":"edmundo.perez@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40466-2-1.jpg","canUploadPhoto":0},{"id":"40468","displayName":"Jos\u00e9
+        P\u00e9rez","firstName":"Jos\u00e9","lastName":"P\u00e9rez","nickname":"","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        32371-75","mobilePhone":"(312)12315-17","workEmail":"heriberto.perez@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40468-1-1.jpg","canUploadPhoto":0},{"id":"40492","displayName":"Ma.
+        Elena P\u00e9rez","firstName":"Ma. Elena","lastName":"P\u00e9rez","nickname":"Mary","gender":"Female","jobTitle":"Manager","workPhone":null,"mobilePhone":"312-120-6546","workEmail":"mary.perez@crowdint.com","department":"Operations","location":"Colima","division":"Manager","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40492-2-1.jpg","canUploadPhoto":0},{"id":"40497","displayName":"Juan
+        Ramos","firstName":"Juan","lastName":"Ramos","nickname":"Rafa","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"312
+        554 4723","workEmail":"rafael.ramos@crowdint.com","department":"Development","location":"Colima","division":"Team
+        Leads","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40497-1-1.jpg","canUploadPhoto":0},{"id":"40535","displayName":"Ricardo
+        Rivas","firstName":"Ricardo","lastName":"Rivas","nickname":"Richistron","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"333-956-7527","workEmail":"ricardo.rivas@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40535-2-1.jpg","canUploadPhoto":0},{"id":"40462","displayName":"Gustavo
+        Robles","firstName":"Gustavo","lastName":"Robles","nickname":"Gusano","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 107-3046","workEmail":"gustavo.robles@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40462-1-1.jpg","canUploadPhoto":0},{"id":"40427","displayName":"Carlos
+        Rocha","firstName":"Carlos","lastName":"Rocha","nickname":"","gender":"Male","jobTitle":"CEO","workPhone":"(312)
+        323-71-75","mobilePhone":"3121123204","workEmail":"carlos.rocha@crowdint.com","department":"Administrative
+        Staff","location":"Colima","division":"C Level \/ Director","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40427-1-1.jpg","canUploadPhoto":0},{"id":"40519","displayName":"Claudia
+        Rueda","firstName":"Claudia","lastName":"Rueda","nickname":null,"gender":"Female","jobTitle":"Assistant","workPhone":null,"mobilePhone":"5545331836","workEmail":"claudia.rueda@crowdint.com","department":"Administrative
+        Staff","location":"Colima","division":"Assistant","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40519-1-1.jpg","canUploadPhoto":0},{"id":"40547","displayName":"Katherine
+        Sipos","firstName":"Katherine","lastName":"Sipos","nickname":"Katie","gender":"Female","jobTitle":"Product
+        Manager","workPhone":null,"mobilePhone":"7246016103","workEmail":"katie.sipos@crowdint.com","department":"Project
+        Management","location":"San Francisco","division":null,"workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40547-1-1.jpg","canUploadPhoto":0},{"id":"40489","displayName":"Isay
+        Sosa","firstName":"Isay","lastName":"Sosa","nickname":"iszandro","gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"312-125-7412","workEmail":"isay.sosa@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40489-1-1.jpg","canUploadPhoto":0},{"id":"40455","displayName":"Eduardo
+        Tapia","firstName":"Eduardo","lastName":"Tapia","nickname":"Tapitas","gender":"Male","jobTitle":"Developer","workPhone":"(312)
+        323-71-75","mobilePhone":"(312) 119-1336","workEmail":"jonathan.tapia@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40455-1-1.jpg","canUploadPhoto":0},{"id":"40457","displayName":"V\u00edctor
+        Vel\u00e1zquez","firstName":"V\u00edctor","lastName":"Vel\u00e1zquez","nickname":"","gender":"Male","jobTitle":"Community
+        Liaison","workPhone":"(312) 323-71-75","mobilePhone":"(312) 112-7812","workEmail":"victor.velazquez@crowdint.com","department":"People
+        and Culture","location":"Colima","division":"Mid-Senior","workPhoneExtension":"","photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40457-1-1.jpg","canUploadPhoto":0},{"id":"40554","displayName":"Ana
+        Ventura","firstName":"Ana","lastName":"Ventura","nickname":null,"gender":"Female","jobTitle":"Intern","workPhone":null,"mobilePhone":"312-304-7725","workEmail":null,"department":"People
+        and Culture","location":"Colima","division":"Internship","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40554-1-1.jpg","canUploadPhoto":0},{"id":"40485","displayName":"Jaime
+        Victoria","firstName":"Jaime","lastName":"Victoria","nickname":null,"gender":"Male","jobTitle":"Contractor","workPhone":null,"mobilePhone":"312-315-1540","workEmail":"jaime.victoria@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40485-1-1.jpg","canUploadPhoto":0},{"id":"40546","displayName":"Manuel
+        Vidaurre","firstName":"Manuel","lastName":"Vidaurre","nickname":null,"gender":"Male","jobTitle":"VP
+        Product","workPhone":null,"mobilePhone":"3339552045","workEmail":"manuel.vidaurre@crowdint.com","department":"Product","location":"Colima","division":"Director","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40546-1-1.jpg","canUploadPhoto":0},{"id":"40490","displayName":"Jos\u00e9
+        Villa","firstName":"Jos\u00e9","lastName":"Villa","nickname":null,"gender":"Male","jobTitle":"Developer","workPhone":null,"mobilePhone":"3411038838","workEmail":"gilberto.villa@crowdint.com","department":"Development","location":"Colima","division":"Engineering","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40490-1-1.jpg","canUploadPhoto":0},{"id":"40522","displayName":"Adil
+        Wali","firstName":"Adil","lastName":"Wali","nickname":null,"gender":"Male","jobTitle":"Founder","workPhone":null,"mobilePhone":null,"workEmail":"adil@crowdint.com","department":null,"location":null,"division":null,"workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40522-1-1.jpg","canUploadPhoto":0},{"id":"40532","displayName":"Jenna
+        Winn","firstName":"Jenna","lastName":"Winn","nickname":null,"gender":"Female","jobTitle":null,"workPhone":null,"mobilePhone":"4129960790","workEmail":"jenna.winn@crowdint.com","department":"Administrative
+        Staff","location":"San Francisco","division":"Manager","workPhoneExtension":null,"photoUploaded":true,"photoUrl":"https:\/\/546290146b6480348b99-6962be03c29cbee4de9297a08643bc62.ssl.cf1.rackcdn.com\/photos\/40532-1-1.jpg","canUploadPhoto":0}]}'
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 22:30:04 GMT
+recorded_with: VCR 2.9.3
