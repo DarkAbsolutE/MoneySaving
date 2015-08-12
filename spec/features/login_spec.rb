@@ -12,4 +12,5 @@ feature 'Login' do
     click_link("Sign in with your crowdint account")
     expect(page).to have_content "Signed in as Jonh Doe!"
   end
+
 end

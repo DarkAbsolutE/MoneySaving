@@ -2,7 +2,7 @@ module BambooHR
   class Sync
     def self.employees
       employees = client.employee_list
-      employees['employees'].each do |data|	
+      employees['employees'].each do |data|
         create_employee(data)
       end
     end

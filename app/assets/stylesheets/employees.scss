@@ -8,6 +8,8 @@
   outline: 0 none;
 }
 
+.title-update-user{ text-align: center; }
+
 #height-cell {
   height: 30%;
   vertical-align: middle;
@@ -43,9 +45,53 @@
   font-size: 25px;
 }
 
-#header{
-  height: 80px;
+.Update-title{
+  display: block;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 0px !important;
+  margin-top: 40px;
+  margin: 0 auto;
 }
+
+.form-update-employee__label-decoration{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.form-update-employee__text-field-decoration{
+  border-radius: 6px;
+  border: none;
+  height: 30px;
+  text-align: center;
+  width: 210px;
+}
+
+.form-update-employee__submit-btn{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.update-border-decoration{
+  background-color: lightslategray;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.form-update-employee{ text-align: center; }
+
+.user-img{
+  border-radius: 150px;
+  border: 15px solid gray;
+  display: block;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+#header{ height: 80px; }
 
 #background_employees{
   background-image: url(http://t2.gstatic.com/images?q=tbn:ANd9GcRIGVPg82SCMRjunbSFJwWPES64KWLWVej5Nyq4hxJqUGuZiZuVPA);
@@ -67,40 +113,6 @@
   height: 79px ;
 }
 
-body{font-family: Raleway;}
+body{ font-family: Raleway; }
 
-th{text-align: center;}
-
-.field{ margin-top: 21px;}
-
-.form-control{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 210px;
-}
-
-input{
-  background-color: white;
-  border: 0px;
-  border: 0px;
-  color: black;
-  text-align: center;
-  width:200px;
-}
-
-.status-form{ width:20px;}
-
-#user_email{
-  font-size: 20px;
-  height: 40px;
-  text-align: center;
-  width: 400px;
-}
-
-#user_password{
-  font-size: 20px;
-  height: 40px;
-  text-align: center;
-  width: 400px;
-}
+th{ text-align: center; }
