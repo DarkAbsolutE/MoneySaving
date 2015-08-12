@@ -34,5 +34,6 @@ end
 
 group :test do
   gem "nyan-cat-formatter"
-  gem 'webmock' 
+  gem 'simplecov', :require => false
+  gem 'webmock'
 end
