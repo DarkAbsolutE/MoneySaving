@@ -30,9 +30,10 @@ group :development, :test do
   gem 'spring'
   gem 'vcr'
   gem 'web-console', '~> 2.0'
+  gem 'selenium-webdriver'
 end
 
 group :test do
   gem "nyan-cat-formatter"
-  gem 'webmock' 
+  gem 'webmock'
 end
