@@ -6,7 +6,7 @@ default: &default
 development:
   <<: *default
   database: Savings_development
-  host: localhost
+  host: 127.0.0.1
 
 test:
   <<: *default
