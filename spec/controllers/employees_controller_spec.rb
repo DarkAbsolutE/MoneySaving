@@ -6,7 +6,7 @@ describe EmployeesController, type: :feature do
       FactoryGirl.create(:saving_company, id: 2, employee_id: 2, amount: 0.0)
       FactoryGirl.create(:saving_employee, id: 2, employee_id: 2, amount: 0.0)
       visit root_path
-	    click_link("Sign in with your crowdint account")
+      click_link("Sign in with your crowdint account")
       visit('/employees/2/edit')
       find('#employee_paypal_email').set('john@paypal.com')
       find('#employee_salary_attributes_amount').set('2000.0')
