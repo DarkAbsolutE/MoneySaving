@@ -29,7 +29,8 @@ class EmployeesController < ApplicationController
   private
 
   def employee_params
-    params.require(:employee).permit(:name, :email, :paypal_email, :status, salary_attributes:[:amount])
+    params.require(:employee).permit(:name, :email, :paypal_email, :status, salary_attributes:[:amount],
+                                     saving_employee_attributes:[:amount], saving_company_attributes:[:amount])
   end
 
 end

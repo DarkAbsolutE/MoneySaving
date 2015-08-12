@@ -8,9 +8,7 @@
   outline: 0 none;
 }
 
-.title-update-user{
-  text-align: center;
-}
+.title-update-user{ text-align: center; }
 
 #height-cell {
   height: 30%;
@@ -48,28 +46,27 @@
 }
 
 .Update-title{
-  margin: 0 auto;
   display: block;
-  margin-left: 0px !important;
-  margin-top: 40px;
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-left: 0px !important;
+  margin-top: 40px;
+  margin: 0 auto;
 }
 
 .form-update-employee__label-decoration{
-  margin-top: 15px;
-  font-weight: bold;
   font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 .form-update-employee__text-field-decoration{
   border-radius: 6px;
-  height: 30px;
-  width: 210px;
-  text-align: center;
   border: none;
-
+  height: 30px;
+  text-align: center;
+  width: 210px;
 }
 
 .form-update-employee__submit-btn{
@@ -80,25 +77,21 @@
 .update-border-decoration{
   background-color: lightslategray;
   border-radius: 4px;
-  width: 600px;
   margin: 0 auto;
+  width: 600px;
 }
 
-.form-update-employee{
-  text-align: center;
-}
+.form-update-employee{ text-align: center; }
 
 .user-img{
-  display: block;
-  margin: 0 auto;
   border-radius: 150px;
   border: 15px solid gray;
+  display: block;
   margin-top: 20px;
+  margin: 0 auto;
 }
 
-#header{
-  height: 80px;
-}
+#header{ height: 80px; }
 
 #background_employees{
   background-image: url(http://t2.gstatic.com/images?q=tbn:ANd9GcRIGVPg82SCMRjunbSFJwWPES64KWLWVej5Nyq4hxJqUGuZiZuVPA);
@@ -123,6 +116,6 @@
   height: 79px ;
 }
 
-body{font-family: Raleway;}
+body{ font-family: Raleway; }
 
-th{text-align: center;}
+th{ text-align: center; }

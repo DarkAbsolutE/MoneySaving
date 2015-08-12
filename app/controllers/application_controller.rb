@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   private
   def check_database_existance
-    if Employee == nil
+    unless @current_employee == nil
       redirect_to root_path
     end
   end
