@@ -6,7 +6,7 @@ require 'capybara/rails'
 require 'vcr'
 require 'simplecov'
 
-Dir[Rails.root.join("spec/support/helpers/changestatus_helper.rb")].each {|f| require f}
+Dir[Rails.root.join("spec/support/helpers/login_helper.rb")].each {|f| require f}
 
 SimpleCov.start 'rails'
 
