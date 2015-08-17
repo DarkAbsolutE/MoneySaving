@@ -6,6 +6,8 @@ require 'capybara/rails'
 require 'vcr'
 require 'simplecov'
 
+Dir[Rails.root.join("spec/support/helpers/login_helper.rb")].each {|f| require f}
+
 SimpleCov.start 'rails'
 
 OmniAuth.configure do |config|
@@ -42,6 +44,7 @@ RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
+
 config.include Capybara::DSL
 config.infer_spec_type_from_file_location!
 
