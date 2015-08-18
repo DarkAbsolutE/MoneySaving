@@ -1,0 +1,9 @@
+.wrapper
+  .container
+    = image_tag "crowd-logo.png", class: 'logo'
+    %h1 Welcome to Savings
+    %span
+      = link_to "Sign in with your crowdint account", "/auth/google_oauth2/", class: "login-btn"
+  %ul.bg-bubbles
+    - 10.times do
+      %li

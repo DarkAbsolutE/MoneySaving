@@ -7,7 +7,7 @@ feature 'Login' do
 
   scenario "User should be able to login" do
     visit root_path
-    expect(page).to have_content "Log in to Savings"
+    expect(page).to have_content "Welcome to Savings"
     expect(page).to have_content "Sign in with your crowdint account"
     click_link("Sign in with your crowdint account")
     expect(page).to have_content "Signed in as Jonh Doe!"
