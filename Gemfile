@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem "omniauth-google-oauth2", "~> 0.2.6"
+gem "rails_best_practices"
+gem "therubyracer"
 gem 'bamboohr', github: 'crowdint/bamboohr'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'coffee-rails', '~> 4.1.0'
@@ -7,17 +10,15 @@ gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleane
 gem 'factory_girl_rails'
 gem 'ffaker'
 gem 'figaro'
+gem 'haml-rails', '~> 0.9.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
-gem "omniauth-google-oauth2", "~> 0.2.6"
 gem 'pg'
 gem 'pry'
 gem 'rails', '4.2.3'
-gem "rails_best_practices"
 gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
-gem "therubyracer"
 gem 'turbolinks'
 gem 'twitter-bootstrap-rails', git: 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'uglifier', '>= 1.3.0'
