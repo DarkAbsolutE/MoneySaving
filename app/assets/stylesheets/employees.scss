@@ -22,12 +22,6 @@
   vertical-align: middle;
 }
 
-#buttonss{
-  color: white;
-  font-size: 25px;
-  margin-top: 15px;
-}
-
 #connected_user{
   color: white;
   font-size: 15px;
@@ -35,14 +29,10 @@
   margin-top: 15px;
 }
 
-#text_employee{
-  color: white;
-  margin-top: 15px;
-}
-
 #buttons{
   color: white;
   font-size: 25px;
+  .a-active { color: #50a3a2}
 }
 
 .Update-title{
@@ -91,28 +81,11 @@
   margin: 0 auto;
 }
 
-#header{ height: 80px; }
-
 #background_employees{
-  background-image: url(http://t2.gstatic.com/images?q=tbn:ANd9GcRIGVPg82SCMRjunbSFJwWPES64KWLWVej5Nyq4hxJqUGuZiZuVPA);
-  background-size: cover;
   height: auto;
   margin-top: -20px;
 }
 
 .title_employees{ font-size: 40px; }
-
- .text-right{
-  font-size: 20px;
-  margin-left: 800px;
-  margin-top: 25px;
-}
-
- .active{
-  background-color: black ;
-  height: 79px ;
-}
-
-body{ font-family: Raleway; }
 
 th{ text-align: center; }
