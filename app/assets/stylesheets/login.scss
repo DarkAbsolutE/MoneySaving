@@ -1,3 +1,7 @@
+.login {
+  h1 { color: white }
+}
+
 .login-btn {
   border: 1px solid;
   color: white;
@@ -11,17 +15,12 @@
           transition-duration: 0.25s;
   &:hover {
     background: #f5f7f9;
-    color: #A9BBCB;
+    color: #50a3a2;
     text-decoration: none;
     padding: 10px 20px 10px 20px;
   }
   &:focus {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-  }
-  &:visted {
-    color: white;
+    color: #50a3a2;
     padding: 10px;
     text-decoration: none;
   }
