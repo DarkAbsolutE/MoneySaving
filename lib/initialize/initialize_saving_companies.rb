@@ -7,12 +7,12 @@ module Initialize
       end
     end
 
-    def self.create_salary_company(data)
+    def self.create_saving_company(data)
       amount_data = {
         employee_id: data['id'],
         amount: 0.0
       }
-      saving_campany = SavingCompany.create_with(amount_data).find_or_initialize_by(employee: data)
+      saving_company = SavingCompany.create_with(amount_data).find_or_initialize_by(employee: data)
       print '.' if saving_company.save(validate: false)
     end
   end

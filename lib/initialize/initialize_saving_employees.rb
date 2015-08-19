@@ -12,7 +12,7 @@ module Initialize
         employee_id: data['id'],
         amount: 0.0
       }
-      saaving_employee = SavingEmployee.create_with(amount_data).find_or_initialize_by(employee: data)
+      saving_employee = SavingEmployee.create_with(amount_data).find_or_initialize_by(employee: data)
       print '.' if saving_employee.save(validate: false)
     end
   end
