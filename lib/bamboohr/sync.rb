@@ -12,7 +12,8 @@ module BambooHR
         name: data['firstName'],
         lastname: data['lastName'],
         status: true,
-        email: data['workEmail']
+        email: data['workEmail'],
+        photo_url: data['photoUrl']
       }
 
       if importable?(data)

@@ -7,7 +7,10 @@ describe BambooHR::Sync do
     {
      'firstName'          => 'Cyan',
      'lastName'           => 'Mendoza',
-     'workEmail'          => 'cyan@crowd.com'
+     'workEmail'          => 'cyan@crowd.com',
+     'photoUploaded'      => false,
+     'photoUrl'           => 'https://crowdint.bamboohr.com/images/photo_placeholder.gif',
+     'canUploadPhoto'     => 1
     }
   end
 
