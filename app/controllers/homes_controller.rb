@@ -10,6 +10,11 @@ class HomesController < ApplicationController
   end
 
   def show
+    @employees = Employee.all
+    @salaries = Salary.all
+    @saving_companies = SavingCompany.all
+    @saving_employees = SavingEmployee.all
+    @total_amounts = TotalAmount.all 
   end
 
 end
