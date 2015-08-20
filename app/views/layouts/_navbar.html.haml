@@ -19,5 +19,6 @@
               %p
                 Signed in as
                 = succeed "!" do
+                  = image_tag current_employee.photo_url
                   %strong= current_employee.name
                 = link_to 'Sign out', signout_path, id: 'sign_out'
