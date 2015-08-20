@@ -3,6 +3,7 @@ FactoryGirl.define do
     name     { FFaker::Name.first_name }
     lastname { FFaker::Name.last_name }
     sequence(:email) { FFaker::Name.first_name + "@crowdint.com" }
+    photo_url { 'https://crowdint.bamboohr.com/images/photo_placeholder.gif' }
     is_admin false
     status true
   end

@@ -18,6 +18,6 @@ describe EmployeesController, type: :feature do
       expect(page).to have_selector("input[value='2000.0']")
       expect(page).to have_selector("input[value='3.1']")
       expect(page).to have_selector("input[value='2.9']")
-      end
     end
   end
+end
