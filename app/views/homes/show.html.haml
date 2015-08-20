@@ -1,0 +1,21 @@
+.container-fluid
+  .row
+    .text-center
+      .sticky-wrap
+        %h1.title_employees Employees
+        %table.sticky-enabled
+          %tr
+            %th Name
+            %th Lastname
+            %th Email
+            %th Salary
+            %th Saving Company
+            %th Saving Employee
+            %th Total Amount  
+            %th Total Amount Dollars
+            %th Edit
+          = render @employees.active
+          = render @salaries
+          = render @saving_companies
+          = render @saving_employees
+          = render @total_amounts
