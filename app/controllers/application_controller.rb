@@ -5,6 +5,11 @@ class ApplicationController < ActionController::Base
   helper_method :current_employee
 
   private
+  def check_database_existance
+    unless @current_employee == nil
+      redirect_to root_path
+    end
+  end
 
   def check_session
     if session[:employee_id] == nil

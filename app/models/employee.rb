@@ -4,6 +4,9 @@ class Employee < ActiveRecord::Base
   has_one :salary
   has_one :total_amount
   has_one :history_transaction
+  accepts_nested_attributes_for :salary
+  accepts_nested_attributes_for :saving_employee
+  accepts_nested_attributes_for :saving_company
 
   scope :inactive, -> {where(status:false)}
   scope :active, -> {where(status:true)}
@@ -15,4 +18,5 @@ class Employee < ActiveRecord::Base
       employee.save
     end
   end
+
 end

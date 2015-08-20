@@ -2,7 +2,7 @@ module BambooHR
   class Sync
     def self.employees
       employees = client.employee_list
-      employees['employees'].each do |data|	
+      employees['employees'].each do |data|
         create_employee(data)
       end
     end
@@ -12,7 +12,8 @@ module BambooHR
         name: data['firstName'],
         lastname: data['lastName'],
         status: true,
-        email: data['workEmail']
+        email: data['workEmail'],
+        photo_url: data['photoUrl']
       }
 
       if importable?(data)

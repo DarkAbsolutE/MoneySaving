@@ -1,0 +1,23 @@
+%header
+  %nav#header.navbar.navbar-greenland
+    .container-fluid
+      .navbar-header
+        = image_tag('logo_crowd.svg', class: 'pull-left')
+        %button.navbar-toggle.collapsed{"data-target" => "#items_de_navbar", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      #items_de_navbar.collapse.navbar-collapse
+        %ul#buttons.nav.navbar-nav
+          %li{ class: ('active' if current_page?(home_path))}
+            = link_to 'Savings', home_path, id: 'text_employee', class: ('a-active' if current_page?(home_path))
+          %li{ class: ('active' if current_page?(employees_path))}
+            = link_to 'Employees', employees_path, id: 'text_employee', class: ('a-active' if current_page?(employees_path))
+          - if current_employee
+            .text-right
+              %p
+                Signed in as
+                = succeed "!" do
+                  %strong= current_employee.name
+                = link_to 'Sign out', signout_path, id: 'sign_out'
