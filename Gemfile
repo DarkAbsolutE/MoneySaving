@@ -27,11 +27,12 @@ group :development, :test do
   gem 'byebug'
   gem 'capybara'
   gem 'launchy', '~> 2.4.3'
+  gem 'lol_dba'
   gem 'rspec-rails', '~>3.0'
+  gem 'selenium-webdriver'
   gem 'spring'
   gem 'vcr'
   gem 'web-console', '~> 2.0'
-  gem 'selenium-webdriver'
 end
 
 group :test do
