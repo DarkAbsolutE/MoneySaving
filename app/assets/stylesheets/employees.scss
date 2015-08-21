@@ -1,3 +1,10 @@
+td {
+ a {
+  color: black;
+  &:hover{ text-decoration: none }
+ }
+}
+
 .in:focus, .in:active:focus, .in.active:focus {
   box-shadow: 0 3px 0 0 red;
   outline: 0 none;

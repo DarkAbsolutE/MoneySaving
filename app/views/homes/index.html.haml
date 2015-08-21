@@ -1,0 +1,15 @@
+.container-fluid
+  .row
+    .text-center
+      .sticky-wrap
+        %table.sticky-enabled
+          %tr
+            %th Name
+            %th Lastname
+            %th Email
+            %th Salary
+            %th Saving Company
+            %th Saving Employee
+            %th Total Amount
+            %th Total Amount Dollars
+          = render @employees.active

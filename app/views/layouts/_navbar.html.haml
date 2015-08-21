@@ -10,8 +10,8 @@
           %span.icon-bar
       #items_de_navbar.collapse.navbar-collapse
         %ul#buttons.nav.navbar-nav
-          %li{ class: ('active' if current_page?(home_path))}
-            = link_to 'Savings', home_path, id: 'text_employee', class: ('a-active' if current_page?(home_path))
+          %li{ class: ('active' if current_page?(homes_path))}
+            = link_to 'Savings', homes_path, id: 'text_employee', class: ('a-active' if current_page?(homes_path))
           %li{ class: ('active' if current_page?(employees_path))}
             = link_to 'Employees', employees_path, id: 'text_employee', class: ('a-active' if current_page?(employees_path))
           - if current_employee
