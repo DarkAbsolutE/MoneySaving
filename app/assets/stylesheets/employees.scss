@@ -72,7 +72,7 @@ td {
 }
 
 .update-border-decoration{
-  background-color: lightslategray;
+  background-color: #2ea879;
   border-radius: 4px;
   margin: 0 auto;
   width: 600px;
@@ -82,10 +82,12 @@ td {
 
 .user-img{
   border-radius: 150px;
-  border: 15px solid gray;
+  border: 7px solid #f5f7f9;
   display: block;
   margin-top: 20px;
   margin: 0 auto;
+  position: relative;
+  top: 30px;
 }
 
 #background_employees{
