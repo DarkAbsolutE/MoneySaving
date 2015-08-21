@@ -1,22 +1,28 @@
 .container-fluid
   .row
-    .col-md-6.text-center{:style => "margin-left:-258px;"}
+    .col-md-6.text-center{style: "margin-left:-258px;"}
       .sticky-wrap
-        %h1.title_employees Active Employees
         %table.sticky-enabled
+          %tr
+            %th{colspan: '5'}
+              Active Employees
           %tr
             %th Name
             %th Lastname
             %th Email
+            %th Status
             %th Edit
           = render @employees.active
     .col-md-6.text-center
       .sticky-wrap
-        %h1.title_employees Inactive Employees
         %table.sticky-enabled
+          %tr
+            %th{colspan: '5'}
+              Inactive Employees
           %tr
             %th Name
             %th Lastname
             %th Email
+            %th Status
             %th Edit
           = render @employees.inactive

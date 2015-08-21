@@ -1,0 +1,1 @@
+SELECT 'boolean'::regtype::oid;

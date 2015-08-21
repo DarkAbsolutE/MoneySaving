@@ -20,7 +20,7 @@ class EmployeesController < ApplicationController
   def update
     @employee = Employee.find(params[:id])
     if @employee.update_attributes(employee_params)
-      redirect_to home_path
+      redirect_to homes_path
     else
       flash[:notice] = "Please, try again"
     end
@@ -36,7 +36,7 @@ class EmployeesController < ApplicationController
   private
 
   def employee_params
-    params.require(:employee).permit(:name, :email, :paypal_email, :status, salary_attributes:[:amount],
+    params.require(:employee).permit(:photo_url, :name, :email, :paypal_email, :status, salary_attributes:[:amount],
                                      saving_employee_attributes:[:amount], saving_company_attributes:[:amount])
   end
 
