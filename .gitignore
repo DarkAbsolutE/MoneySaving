@@ -23,3 +23,4 @@ config-var-staging.sh
 config-db-staging.sh
 config-var-production.sh
 config-db-production.sh
+/coverage/

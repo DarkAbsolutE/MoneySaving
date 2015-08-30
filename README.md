@@ -17,6 +17,7 @@ host:localhost
 * [Set environment variables](#set-environment-variables)
   * [Figaro](#figaro)
   * [Bamboohr client Initialization](#bamboohr-client-initialization)
+  * [SimpleCov](#how-to-use-simplecov)
 
 ## App for:
 
@@ -73,4 +74,9 @@ We are using figaro to protect env variables with sensible information, so pleas
 
 ###Bamboohr client Initialization
 
-    $ rake bamboo:sync_users
+    $ rake bamboo:sync_employees
+
+### How to use SimpleCov
+
+    $ rspec spec
+    $ open coverage/index.html

@@ -8,24 +8,25 @@ module BambooHR
     end
 
     def self.create_employee(data)
-      user_data = {
+      employee_data = {
         name: data['firstName'],
         lastname: data['lastName'],
-	status: true
-        }
+        status: true,
+        email: data['workEmail'],
+        photo_url: data['photoUrl']
+      }
+
       if importable?(data)
-        employee = Employee.create_with(user_data).find_or_initialize_by(email: data['workEmail'])
-        print '.' if  employee.save(validate: false)
+        print "."
+        Employee.where(employee_data).first_or_create
       end
     end
 
     def self.client
-      unless @client
-        @client = Client.new
-        @client.key = ENV['BAMBOO_API_KEY']
-        @client.subdomain = ENV['BAMBOO_SUBDOMAIN']
-      end
-      @client
+      client = Client.new()
+      client.key = ENV['BAMBOO_API_KEY']
+      client.subdomain = ENV['BAMBOO_SUBDOMAIN']
+      client
     end
 
     def self.importable?(data)
