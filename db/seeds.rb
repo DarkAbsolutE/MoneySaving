@@ -1,10 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-ENV['ADMINS'].split(',').each do |email|
-  Admin.find_or_initialize_by(email: email).save(validate: false)
-end
+Rake::Task['bamboo:sync_employees'].invoke
+Rake::Task['salaries:initialize_salaries'].invoke
+Rake::Task['saving_companies:initialize_saving_campanies'].invoke
+Rake::Task['saving_employees:initialize_saving_employees'].invoke

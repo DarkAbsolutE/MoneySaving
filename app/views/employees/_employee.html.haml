@@ -1,0 +1,21 @@
+%tr{:class => build_status_class(employee)}
+  %td#height-cell
+    = employee.name
+  %td#height-cell
+    = employee.lastname
+  %td#height-cell
+    = employee.email
+  - unless current_page?(homes_path)
+    %td
+      = link_to '',update_status_path(employee.id), method: :put , class: build_button_class(employee)
+    %td#height-cell
+      = link_to '', edit_employee_path(employee), class: 'glyphicon glyphicon-edit'
+  - if current_page?(homes_path)
+    %td#height-cell
+      = employee.salary[:amount]
+    %td#height-cell
+      = employee.saving_company[:amount]
+    %td#height-cell
+      = employee.saving_employee[:amount]
+    %td#height-cell
+    %td#height-cell

@@ -1,0 +1,35 @@
+.navbar-greenland {
+  height: 80px;
+  background: #50a3a2;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  li > a {
+    color: white;
+    margin-top: 15px;
+    &:hover {
+      background: #f5f7f9;
+      bottom: 15px;
+      color: #50a3a2;
+      padding-bottom: 29px;
+      padding-top: 30px;
+      position: relative;
+    }
+  }
+}
+
+.active {
+  background: #f5f7f9;
+  height: 79px ;
+  color: #50a3a2;
+}
+
+.text-right{
+  font-size: 20px;
+  margin-left: 800px;
+  margin-top: 25px;
+  a { text-decoration: none }
+  img {
+    border-radius: 5pc;
+    height: 30px;
+  }
+}

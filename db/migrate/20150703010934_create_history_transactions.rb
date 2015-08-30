@@ -5,7 +5,7 @@ class CreateHistoryTransactions < ActiveRecord::Migration
         t.string :name
         t.decimal :saving_employee
         t.decimal :saving_company
-        t.decimal :salary 
+        t.decimal :salary
         t.timestamps null: false
     end
   end
